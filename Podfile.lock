@@ -1,0 +1,16 @@
+PODS:
+  - DeepDiff (2.3.1)
+
+DEPENDENCIES:
+  - DeepDiff
+
+SPEC REPOS:
+  trunk:
+    - DeepDiff
+
+SPEC CHECKSUMS:
+  DeepDiff: e5ae6c50d0321568e4508cec5930b9f10bb293fc
+
+PODFILE CHECKSUM: 6f6e59808300d2c2b832cd4c802869e033793d94
+
+COCOAPODS: 1.8.4
