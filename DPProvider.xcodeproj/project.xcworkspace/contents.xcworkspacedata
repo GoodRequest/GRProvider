@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DPProvider.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

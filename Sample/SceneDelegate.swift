@@ -1,9 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Sample
+//  Example
 //
-//  Created by Dominik Pethö on 5/18/20.
-//  Copyright © 2020 Depo. All rights reserved.
+//  Created by Dominik Pethö on 5/19/20.
 //
 
 import UIKit
