@@ -29,7 +29,7 @@ Example:  `UITableViewDiffableDataSource` accessible in iOS 13 as an simple appr
 
 Learning curve is a little bit tedious, but it's worth for the future programing.
 
-Advantages:
+**👍 Advantages:**
 - atomic data
 - one source of truth
 - no need to do custom diffing mechanism
@@ -37,7 +37,7 @@ Advantages:
 - avoids side effects
 - uniform approach for the simple data provider, data provider using DeepDiff library or data provider using DiffableDataSource
 
-Disadvantages:
+**👎 Disadvantages:**
 - learning curve
 - Not a good solution for complicated/advanced usage of the TableView or CollectionView
 - different approach than standard Apple iOS API
