@@ -30,7 +30,7 @@ Example:  `UITableViewDiffableDataSource` accessible in **iOS 13** is a simple a
 Learning curve is a little bit tedious, but it's worth for the future programing.
 
 **👍 Advantages:**
-- atomic data binding
+- immutable data binding
 - one source of the truth
 - no need to do the custom diffing mechanism
 - avoids synchronization bugs, exceptions and crashes
@@ -44,11 +44,11 @@ Learning curve is a little bit tedious, but it's worth for the future programing
 - different approach than the standard Apple iOS API
 - usage of the third part diffing library DeepDiff
 - contains only the most used delegates methods 
-- still in **development** process
+- still in the **development** process
 
 Look at this simple code you just need to write, to show data in Table View:
 ```swift
-lazy var tableProvider = GRSimpleTableViewProvider<Int> { _, tv, indexPath, item in
+lazy var tableProvider = GRSimpleTableViewProvider<Int> { provider, tv, indexPath, item in
     guard let cell = tv.dequeueReusableCell(fromClass: SimpleTableViewCell.self, for: indexPath) else { return UITableViewCell() }
     cell.titleLabel.text = "Item with value: \(item)"
     return cell
@@ -59,7 +59,7 @@ private func showItems() {
 }
 ```
 That's all you need to do, when showing simple data in the **TableView**. 
-Isn't it great? That's all you need to do. 
+Isn't that great? That's all you need to do. 
 
 No need of:
 - assigning `tableView.delegate = self` & `tableView.dataSource = self` 
@@ -125,7 +125,7 @@ private let tableProvider = GRSimpleTableViewProvider<Item>()
 
 ```
 
-### Setup your provider
+#### Setup your provider
 
 ```swift
 
@@ -144,7 +144,7 @@ private func setupTableProvider() {
 
 ```
 
-### Show items in the `UITableView`
+#### Show items in the `UITableView`
 
 ```swift
 
@@ -161,7 +161,7 @@ private func showItems() {
 ```
 🔥 That's it. All you need to do to show the simple list with 2 advertisements and title in few lines of code. 🔥
 
-### All together
+#### All together
 Show list of strings in table view.
 ```swift
 
@@ -214,7 +214,7 @@ You can choose one of these types of providers:
 3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing and animating
 4. `GRDeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing and animating. More info about framework [click here](https://github.com/onmyway133/DeepDiff).
 
-Common features:
+**Features:**
 
 1.  `estimatedHeightForRow: CGFloat`   
 Setup default estimated height of the dequeued cell.
@@ -314,7 +314,7 @@ Right know, we have only one 2 types of CollectionView Providers
 1. `GRCollectionViewProvider` -> Default provider for the `UICollectionView`
 2. `GRDeepDiffCollectionViewProvider` -> Inherits all functionality of the `GRCollectionViewProvider` but uses the `DeepDiff` framework for diffing and animating. More info about the framework, [click here](https://github.com/onmyway133/DeepDiff)
 
-Common features:
+**Features:**
 
 1. `configureCell: ItemProvider`
 2. `configureCellSize: ItemSizeProvider`
@@ -335,7 +335,7 @@ Common features:
 ## Animating Differences 
 
 ### GRDeepDiffTableViewProvider 
-DeepDiff is a framework, used in past few years. It's fast with great benchmark against other alghoritms. More info about the library and alghoritm find [here](https://github.com/onmyway133/DeepDiff).
+**DeepDiff** is a framework, used in past few years. It's fast with great benchmark against other alghoritms. More info about the library and alghoritm find [here](https://github.com/onmyway133/DeepDiff).
 
 It works simillarly to the `GRDiffableTableViewProvider`, with same API but....
 
@@ -352,7 +352,7 @@ It works simillarly to the `GRDiffableTableViewProvider`, with same API but....
 Apple has released the new API for animating differences in table views and collection views called `UITableViewDiffableDataSource`.
 You can find the documentation [here](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource).
 
-GRProvider uses it's benefits and provides you a custom implementation benefitting on the `GRDiffableTableViewProvider`.
+**GRProvider** uses it's benefits and provides you a custom implementation benefitting on the `GRDiffableTableViewProvider`.
 It uses the same API as other providers, so you don't need to worry about the learning curve. All providers shares their API.
 
 #### What is different?
