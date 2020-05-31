@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "DPProvider",
+    name: "GRProvider",
     platforms: [.iOS(.v11)],
     products: [
         .library(
-            name: "DPProvider",
-            targets: ["DPProvider"]),
+            name: "GRProvider",
+            targets: ["GRProvider"]),
     ],
     dependencies: [
         .package(url: "https://github.com/onmyway133/DeepDiff.git", .upToNextMajor(from: "2.3.0"))
@@ -17,11 +17,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "DPProvider",
+            name: "GRProvider",
             dependencies: ["DeepDiff"],
             path: "Sources"),
         .testTarget(
-            name: "DPProviderTests",
-            dependencies: ["DPProvider"]),
+            name: "GRProviderTests",
+            dependencies: ["GRProvider"]),
     ]
 )

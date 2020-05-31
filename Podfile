@@ -1,12 +1,12 @@
 platform :ios, '11.0'
 
-target 'DPProvider' do
+target 'GRProvider' do
 
   pod 'DeepDiff'
 
-  # Pods for DPProvider
+  # Pods for GRProvider
 
-  target 'DPProviderTests' do
+  target 'GRProviderTests' do
     # Pods for testing
   end
 

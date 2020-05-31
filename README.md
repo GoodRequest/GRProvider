@@ -1,4 +1,4 @@
-# DPProvider
+# GRProvider
 [![iOS Version](https://img.shields.io/badge/iOS_Version->=_11.0-brightgreen?logo=apple&logoColor=green)]() [![Swift Version](https://img.shields.io/badge/Swift_Version-5.2-green?logo=swift)](https://docs.swift.org/swift-book/)
 [![Supported devices](https://img.shields.io/badge/Supported_Devices-iPhone/iPad-green)]()
 [![Contains Test](https://img.shields.io/badge/Tests-YES-blue)]()
@@ -47,7 +47,7 @@ Disadvantages:
 
 Look at this simple code you just need to write:
 ```swift
-lazy var tableProvider = DPSimpleTableViewProvider<Int> { _, tv, indexPath, item in
+lazy var tableProvider = GRSimpleTableViewProvider<Int> { _, tv, indexPath, item in
     guard let cell = tv.dequeueReusableCell(fromClass: SimpleTableViewCell.self, for: indexPath) else { return UITableViewCell() }
     cell.titleLabel.text = "Item with value: \(item)"
     return cell
@@ -68,12 +68,12 @@ No need of:
 
 ## How to use?
 
-You can use this type of DPProviders:
-1. `DPSimpleTableViewProvider` -> use in case you have just one section in your TableView
-2. `DPTableViewProvider` -> Default provider for the TableView
-3. `DPDIffableTableViewProvider` -> Inherits all functionality of `DPTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing
-4. `DeepDiffTableViewProvider` -> Inherits all functionality of `DPTableViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
-4. `DPCollectionViewProvider` -> Default provider for the CollectionView
+You can use this type of GRProviders:
+1. `GRSimpleTableViewProvider` -> use in case you have just one section in your TableView
+2. `GRTableViewProvider` -> Default provider for the TableView
+3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing
+4. `DeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
+4. `GRCollectionViewProvider` -> Default provider for the CollectionView
 
 ### Define model 
 Firstly you need to model your data, showed in the TableView or CollectionView using any type you choose.
@@ -120,7 +120,7 @@ You can model it, based on your preference.
 ```swift
 
 @IBOutlet weak var tableView: UITableView!
-private let tableProvider = DPSimpleTableViewProvider<Item>()
+private let tableProvider = GRSimpleTableViewProvider<Item>()
 
 ```
 
@@ -165,13 +165,13 @@ Show list of strings in table view.
 ```swift
 
 import UIKit
-import DPProvider
+import GRProvider
 
 class SimpleTableViewSampleController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private let tableProvider = DPSimpleTableViewProvider<String>()
+    private let tableProvider = GRSimpleTableViewProvider<String>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -208,10 +208,10 @@ class SimpleTableViewSampleController: UIViewController {
 
 You can choose one of these types of providers
 
-1. `DPSimpleTableViewProvider` -> use in case you have just one section in your TableView
-2. `DPTableViewProvider` -> Default provider for the TableView
-3. `DPDIffableTableViewProvider` -> Inherits all functionality of `DPTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing
-4. `DPDeepDiffTableViewProvider` -> Inherits all functionality of `DPTableViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
+1. `GRSimpleTableViewProvider` -> use in case you have just one section in your TableView
+2. `GRTableViewProvider` -> Default provider for the TableView
+3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing
+4. `GRDeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
 
 Common features:
 
@@ -310,8 +310,8 @@ Closure is notified, when the table view contains the refresh control. When `scr
 
 Right know, we have only one 2 types of CollectionViewProvider
 
-1. `DPCollectionViewProvider` -> Default provider for the CollectionView
-2. `DPDeepDiffCollectionViewProvider` -> Inherits all functionality of `DPCollectionViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
+1. `GRCollectionViewProvider` -> Default provider for the CollectionView
+2. `GRDeepDiffCollectionViewProvider` -> Inherits all functionality of `GRCollectionViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
 
 Common features:
 
@@ -333,10 +333,10 @@ Common features:
 
 ## Animating differences 
 
-### DPDeepDiffTableViewProvider 
+### GRDeepDiffTableViewProvider 
 DeepDiff is a framework, used in past few years without problem. It's fast with great benchmark against other alghoritms. More about the library and alhgoritm you can find [here](https://github.com/onmyway133/DeepDiff).
 
-It works simillarly to `DPDIffableTableViewProvider`, with same API but....
+It works simillarly to `GRDiffableTableViewProvider`, with same API but....
 
 #### What is different?
 
@@ -347,24 +347,24 @@ It works simillarly to `DPDIffableTableViewProvider`, with same API but....
 
 ![](Resources/DeepDiff.gif)
 
-### DPDIffableTableViewProvider #iOS13
+### GRDiffableTableViewProvider #iOS13
 Apple has released new API for animating differences in table views and collection views called `UITableViewDiffableDataSource`.
 You can find documentation [here](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource).
 
-DPProvider uses it's benefits and provides you an custom implementation: `DPDIffableTableViewProvider`.
+GRProvider uses it's benefits and provides you an custom implementation: `GRDiffableTableViewProvider`.
 It uses the same API as other providers, so you don't need to worry about learning curve. All providers shares their API.
 
 #### What is different?
 
 1. You Section/Item model definition must comform to `Hashable` protocol
-2. Constructor of the `DPDIffableTableViewProvider` requires instance of the TableView you will use in items binding.
+2. Constructor of the `GRDiffableTableViewProvider` requires instance of the TableView you will use in items binding.
 
 There 2 things are required to animate your items differences in the table view. 
 
 ![](Resources/Diffable.gif)
 
-### DPDeepDiffCollectionViewProvider 
-Similar to [this section](#DPDeepDiffTableViewProvider)
+### GRDeepDiffCollectionViewProvider 
+Similar to [this section](#GRDeepDiffTableViewProvider)
 
 ![](Resources/DeepDiffCollection.gif)
 
@@ -377,7 +377,7 @@ Just subclass one of the provider and create addtional functionality. It's that 
 ### For example
 
 ```swift
-class CustomSimpleTableViewProvider<Section: Sectionable>: DPTableViewProvider<Section> {
+class CustomSimpleTableViewProvider<Section: Sectionable>: GRTableViewProvider<Section> {
     
     open var configureDidHighlightRow: ((CustomSimpleTableViewProvider, UITableView, Section.Item) -> ())?
     
@@ -405,13 +405,13 @@ import PackageDescription
 let package = Package(
     name: "SampleProject",
     dependencies: [
-        .Package(url: "https://github.com/smajdalf/DPProvider" from: "0.0.1")
+        .Package(url: "https://github.com/smajdalf/GRProvider" from: "0.0.1")
     ]
 )
 
 ```
-If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package Dependency... and enter package repository URL https://github.com/smajdalf/DPProvider, then follow the instructions
+If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package Dependency... and enter package repository URL https://github.com/smajdalf/GRProvider, then follow the instructions
 
 # License
-DPProvider is released under the MIT license. See [LICENSE](LICENSE.md) for details.
+GRProvider is released under the MIT license. See [LICENSE](LICENSE.md) for details.
 

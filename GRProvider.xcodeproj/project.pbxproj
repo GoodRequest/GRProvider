@@ -1,0 +1,1172 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"GRProvider::GRProviderPackageTests::ProductTarget" /* GRProviderPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_118 /* Build configuration list for PBXAggregateTarget "GRProviderPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_121 /* PBXTargetDependency */,
+			);
+			name = GRProviderPackageTests;
+			productName = GRProviderPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		B18C775F2483F8D800B7E12F /* DeppDiffCollectionProviderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774D2483F8D700B7E12F /* DeppDiffCollectionProviderSampleViewController.swift */; };
+		B18C77602483F8D800B7E12F /* CollectionProviderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774E2483F8D700B7E12F /* CollectionProviderSampleViewController.swift */; };
+		B18C77612483F8D800B7E12F /* SimpleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774F2483F8D700B7E12F /* SimpleCollectionViewCell.swift */; };
+		B18C77622483F8D800B7E12F /* SimpleCollectionViewSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77502483F8D700B7E12F /* SimpleCollectionViewSupplementaryView.swift */; };
+		B18C77632483F8D800B7E12F /* DeepDiffTableProviderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77522483F8D700B7E12F /* DeepDiffTableProviderSampleViewController.swift */; };
+		B18C77642483F8D800B7E12F /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77532483F8D700B7E12F /* SimpleTableViewCell.swift */; };
+		B18C77652483F8D800B7E12F /* SimpleTableViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77542483F8D700B7E12F /* SimpleTableViewSampleController.swift */; };
+		B18C77662483F8D800B7E12F /* DiffableTableViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77552483F8D700B7E12F /* DiffableTableViewSampleController.swift */; };
+		B18C77672483F8D800B7E12F /* TableViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77562483F8D700B7E12F /* TableViewSampleController.swift */; };
+		B18C77692483F8D800B7E12F /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77592483F8D700B7E12F /* UITableViewExtensions.swift */; };
+		B18C776A2483F8D800B7E12F /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C775A2483F8D700B7E12F /* UICollectionViewExtensions.swift */; };
+		B18C776B2483F8D800B7E12F /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C775B2483F8D700B7E12F /* UIKitExtensions.swift */; };
+		B18C77702483F8FD00B7E12F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C776E2483F8FD00B7E12F /* AppDelegate.swift */; };
+		B18C77732483F91900B7E12F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77722483F91800B7E12F /* ViewController.swift */; };
+		B18C77792483FBAE00B7E12F /* GRProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "GRProvider::GRProvider::Product" /* GRProvider.framework */; };
+		B18C777A2483FBD800B7E12F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C775C2483F8D700B7E12F /* Main.storyboard */; };
+		B18C777B2483FBDB00B7E12F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C775D2483F8D700B7E12F /* LaunchScreen.storyboard */; };
+		B18C777C2483FBDE00B7E12F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18C77742483F94B00B7E12F /* Assets.xcassets */; };
+		B18C777E2483FC2A00B7E12F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */; };
+		OBJ_100 /* DPTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DPTableViewProvider.swift */; };
+		OBJ_101 /* DPDeepDiffTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DPDeepDiffTableViewProvider.swift */; };
+		OBJ_102 /* DeepDiffUpdateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DeepDiffUpdateExtensions.swift */; };
+		OBJ_103 /* SectionIndexConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SectionIndexConverter.swift */; };
+		OBJ_104 /* DPDiffableTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* DPDiffableTableViewProvider.swift */; };
+		OBJ_105 /* DiffableBindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* DiffableBindingExtensions.swift */; };
+		OBJ_106 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* TableViewExtensions.swift */; };
+		OBJ_107 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* TableViewProvider.swift */; };
+		OBJ_109 /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DeepDiff::DeepDiff::Product" /* DeepDiff.framework */; };
+		OBJ_116 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_127 /* GRProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* GRProviderTests.swift */; };
+		OBJ_129 /* GRProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "GRProvider::GRProvider::Product" /* GRProvider.framework */; };
+		OBJ_130 /* DeepDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DeepDiff::DeepDiff::Product" /* DeepDiff.framework */; };
+		OBJ_68 /* Heckel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Heckel.swift */; };
+		OBJ_69 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* WagnerFischer.swift */; };
+		OBJ_70 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Array+Extensions.swift */; };
+		OBJ_71 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Change.swift */; };
+		OBJ_72 /* DeepDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* DeepDiff.swift */; };
+		OBJ_73 /* DiffAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* DiffAware.swift */; };
+		OBJ_74 /* MoveReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* MoveReducer.swift */; };
+		OBJ_75 /* IndexPathConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* IndexPathConverter.swift */; };
+		OBJ_76 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* UICollectionView+Extensions.swift */; };
+		OBJ_77 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* UITableView+Extensions.swift */; };
+		OBJ_84 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Package.swift */; };
+		OBJ_90 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CollectionViewExtensions.swift */; };
+		OBJ_91 /* DPCollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DPCollectionViewProvider.swift */; };
+		OBJ_92 /* DPDeepDiffCollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DPDeepDiffCollectionViewProvider.swift */; };
+		OBJ_93 /* DeepDiffCollectionViewBindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */; };
+		OBJ_94 /* DeepDiffCollectionViewUpdateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */; };
+		OBJ_95 /* DeepDiffHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* DeepDiffHelper.swift */; };
+		OBJ_96 /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Displayable.swift */; };
+		OBJ_97 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FoundationExtensions.swift */; };
+		OBJ_98 /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Sectionable.swift */; };
+		OBJ_99 /* DPSimpleTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DPSimpleTableViewProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B18C77042483F79B00B7E12F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "DeepDiff::DeepDiff";
+			remoteInfo = DeepDiff;
+		};
+		B18C77052483F79B00B7E12F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "GRProvider::GRProvider";
+			remoteInfo = GRProvider;
+		};
+		B18C77062483F79B00B7E12F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "DeepDiff::DeepDiff";
+			remoteInfo = DeepDiff;
+		};
+		B18C77072483F79D00B7E12F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "GRProvider::GRProviderTests";
+			remoteInfo = GRProviderTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B18C770C2483F80400B7E12F /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18C774D2483F8D700B7E12F /* DeppDiffCollectionProviderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeppDiffCollectionProviderSampleViewController.swift; sourceTree = "<group>"; };
+		B18C774E2483F8D700B7E12F /* CollectionProviderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionProviderSampleViewController.swift; sourceTree = "<group>"; };
+		B18C774F2483F8D700B7E12F /* SimpleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewCell.swift; sourceTree = "<group>"; };
+		B18C77502483F8D700B7E12F /* SimpleCollectionViewSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewSupplementaryView.swift; sourceTree = "<group>"; };
+		B18C77522483F8D700B7E12F /* DeepDiffTableProviderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepDiffTableProviderSampleViewController.swift; sourceTree = "<group>"; };
+		B18C77532483F8D700B7E12F /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
+		B18C77542483F8D700B7E12F /* SimpleTableViewSampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewSampleController.swift; sourceTree = "<group>"; };
+		B18C77552483F8D700B7E12F /* DiffableTableViewSampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffableTableViewSampleController.swift; sourceTree = "<group>"; };
+		B18C77562483F8D700B7E12F /* TableViewSampleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSampleController.swift; sourceTree = "<group>"; };
+		B18C77592483F8D700B7E12F /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		B18C775A2483F8D700B7E12F /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		B18C775B2483F8D700B7E12F /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		B18C775C2483F8D700B7E12F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B18C775D2483F8D700B7E12F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B18C776E2483F8FD00B7E12F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B18C776F2483F8FD00B7E12F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18C77722483F91800B7E12F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sample/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		B18C77742483F94B00B7E12F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B18C777F2483FCCB00B7E12F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		"DeepDiff::DeepDiff::Product" /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeepDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"GRProvider::GRProvider::Product" /* GRProvider.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GRProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"GRProvider::GRProviderTests::Product" /* GRProviderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = GRProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
+		OBJ_11 /* DPCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPCollectionViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_12 /* DPDeepDiffCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDeepDiffCollectionViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffCollectionViewBindingExtension.swift; sourceTree = "<group>"; };
+		OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffCollectionViewUpdateExtensions.swift; sourceTree = "<group>"; };
+		OBJ_15 /* DeepDiffHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffHelper.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
+		OBJ_17 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Sectionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sectionable.swift; sourceTree = "<group>"; };
+		OBJ_20 /* DPSimpleTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSimpleTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_21 /* DPTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_23 /* DPDeepDiffTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDeepDiffTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_24 /* DeepDiffUpdateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffUpdateExtensions.swift; sourceTree = "<group>"; };
+		OBJ_25 /* SectionIndexConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionIndexConverter.swift; sourceTree = "<group>"; };
+		OBJ_27 /* DPDiffableTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDiffableTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_28 /* DiffableBindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableBindingExtensions.swift; sourceTree = "<group>"; };
+		OBJ_29 /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
+		OBJ_30 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_34 /* GRProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRProviderTests.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/dominikpetho/Documents/Work/DPProvider/DPProvider/.build/checkouts/DeepDiff/Package.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Heckel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heckel.swift; sourceTree = "<group>"; };
+		OBJ_41 /* WagnerFischer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagnerFischer.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_43 /* Change.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
+		OBJ_44 /* DeepDiff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiff.swift; sourceTree = "<group>"; };
+		OBJ_45 /* DiffAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffAware.swift; sourceTree = "<group>"; };
+		OBJ_46 /* MoveReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveReducer.swift; sourceTree = "<group>"; };
+		OBJ_48 /* IndexPathConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPathConverter.swift; sourceTree = "<group>"; };
+		OBJ_49 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_50 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_55 /* GRProvider.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = GRProvider.xcworkspace; sourceTree = SOURCE_ROOT; };
+		OBJ_56 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
+		OBJ_57 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
+		OBJ_59 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_61 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		OBJ_62 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B18C77092483F80400B7E12F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18C77792483FBAE00B7E12F /* GRProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_109 /* DeepDiff.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_129 /* GRProvider.framework in Frameworks */,
+				OBJ_130 /* DeepDiff.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B18C770D2483F80400B7E12F /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				B18C77582483F8D700B7E12F /* Common */,
+				B18C774B2483F8D700B7E12F /* View Controllers */,
+				B18C77722483F91800B7E12F /* ViewController.swift */,
+				B18C775D2483F8D700B7E12F /* LaunchScreen.storyboard */,
+				B18C775C2483F8D700B7E12F /* Main.storyboard */,
+				B18C77742483F94B00B7E12F /* Assets.xcassets */,
+				B18C776E2483F8FD00B7E12F /* AppDelegate.swift */,
+				B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */,
+				B18C776F2483F8FD00B7E12F /* Info.plist */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		B18C774B2483F8D700B7E12F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B18C774C2483F8D700B7E12F /* Collection View */,
+				B18C77512483F8D700B7E12F /* Table View */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B18C774C2483F8D700B7E12F /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				B18C774D2483F8D700B7E12F /* DeppDiffCollectionProviderSampleViewController.swift */,
+				B18C774E2483F8D700B7E12F /* CollectionProviderSampleViewController.swift */,
+				B18C774F2483F8D700B7E12F /* SimpleCollectionViewCell.swift */,
+				B18C77502483F8D700B7E12F /* SimpleCollectionViewSupplementaryView.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		B18C77512483F8D700B7E12F /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				B18C77522483F8D700B7E12F /* DeepDiffTableProviderSampleViewController.swift */,
+				B18C77532483F8D700B7E12F /* SimpleTableViewCell.swift */,
+				B18C77542483F8D700B7E12F /* SimpleTableViewSampleController.swift */,
+				B18C77552483F8D700B7E12F /* DiffableTableViewSampleController.swift */,
+				B18C77562483F8D700B7E12F /* TableViewSampleController.swift */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		B18C77582483F8D700B7E12F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B18C77592483F8D700B7E12F /* UITableViewExtensions.swift */,
+				B18C775A2483F8D700B7E12F /* UICollectionViewExtensions.swift */,
+				B18C775B2483F8D700B7E12F /* UIKitExtensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B18C77782483FBAE00B7E12F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* DPSimpleTableViewProvider.swift */,
+				OBJ_21 /* DPTableViewProvider.swift */,
+				OBJ_22 /* Deep Diff */,
+				OBJ_26 /* Diffable */,
+				OBJ_29 /* TableViewExtensions.swift */,
+				OBJ_30 /* TableViewProvider.swift */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* Deep Diff */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* DPDeepDiffTableViewProvider.swift */,
+				OBJ_24 /* DeepDiffUpdateExtensions.swift */,
+				OBJ_25 /* SectionIndexConverter.swift */,
+			);
+			path = "Deep Diff";
+			sourceTree = "<group>";
+		};
+		OBJ_26 /* Diffable */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* DPDiffableTableViewProvider.swift */,
+				OBJ_28 /* DiffableBindingExtensions.swift */,
+			);
+			path = Diffable;
+			sourceTree = "<group>";
+		};
+		OBJ_31 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* GRProviderTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_32 /* GRProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* Info.plist */,
+				OBJ_34 /* GRProviderTests.swift */,
+			);
+			name = GRProviderTests;
+			path = Tests/GRProviderTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* DeepDiff 2.3.1 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_36 /* DeepDiff 2.3.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* Package.swift */,
+				OBJ_38 /* Shared */,
+				OBJ_47 /* iOS */,
+			);
+			name = "DeepDiff 2.3.1";
+			path = .build/checkouts/DeepDiff/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_38 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* Algorithms */,
+				OBJ_42 /* Array+Extensions.swift */,
+				OBJ_43 /* Change.swift */,
+				OBJ_44 /* DeepDiff.swift */,
+				OBJ_45 /* DiffAware.swift */,
+				OBJ_46 /* MoveReducer.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		OBJ_39 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* Heckel.swift */,
+				OBJ_41 /* WagnerFischer.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		OBJ_47 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* IndexPathConverter.swift */,
+				OBJ_49 /* UICollectionView+Extensions.swift */,
+				OBJ_50 /* UITableView+Extensions.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_59 /* LICENSE.md */,
+				OBJ_60 /* README.md */,
+				B18C777F2483FCCB00B7E12F /* CHANGELOG.md */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_31 /* Tests */,
+				OBJ_35 /* Dependencies */,
+				B18C770D2483F80400B7E12F /* Sample */,
+				OBJ_51 /* Products */,
+				OBJ_55 /* GRProvider.xcworkspace */,
+				OBJ_56 /* Resources */,
+				OBJ_57 /* Pods */,
+				OBJ_61 /* Podfile */,
+				OBJ_62 /* Podfile.lock */,
+				B18C77782483FBAE00B7E12F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"GRProvider::GRProviderTests::Product" /* GRProviderTests.xctest */,
+				"GRProvider::GRProvider::Product" /* GRProvider.framework */,
+				"DeepDiff::DeepDiff::Product" /* DeepDiff.framework */,
+				B18C770C2483F80400B7E12F /* Sample.app */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* GRProvider */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* GRProvider */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Collection View */,
+				OBJ_15 /* DeepDiffHelper.swift */,
+				OBJ_16 /* Displayable.swift */,
+				OBJ_17 /* FoundationExtensions.swift */,
+				OBJ_18 /* Sectionable.swift */,
+				OBJ_19 /* Table View */,
+			);
+			path = GRProvider;
+			sourceTree = "<group>";
+		};
+		OBJ_9 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* CollectionViewExtensions.swift */,
+				OBJ_11 /* DPCollectionViewProvider.swift */,
+				OBJ_12 /* DPDeepDiffCollectionViewProvider.swift */,
+				OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */,
+				OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */,
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B18C770B2483F80400B7E12F /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18C771F2483F80600B7E12F /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				B18C77082483F80400B7E12F /* Sources */,
+				B18C77092483F80400B7E12F /* Frameworks */,
+				B18C770A2483F80400B7E12F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = B18C770C2483F80400B7E12F /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		"DeepDiff::DeepDiff" /* DeepDiff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_64 /* Build configuration list for PBXNativeTarget "DeepDiff" */;
+			buildPhases = (
+				OBJ_67 /* Sources */,
+				OBJ_78 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepDiff;
+			productName = DeepDiff;
+			productReference = "DeepDiff::DeepDiff::Product" /* DeepDiff.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"DeepDiff::SwiftPMPackageDescription" /* DeepDiffPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_80 /* Build configuration list for PBXNativeTarget "DeepDiffPackageDescription" */;
+			buildPhases = (
+				OBJ_83 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepDiffPackageDescription;
+			productName = DeepDiffPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"GRProvider::GRProvider" /* GRProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_86 /* Build configuration list for PBXNativeTarget "GRProvider" */;
+			buildPhases = (
+				OBJ_89 /* Sources */,
+				OBJ_108 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_110 /* PBXTargetDependency */,
+			);
+			name = GRProvider;
+			productName = GRProvider;
+			productReference = "GRProvider::GRProvider::Product" /* GRProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"GRProvider::GRProviderTests" /* GRProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_123 /* Build configuration list for PBXNativeTarget "GRProviderTests" */;
+			buildPhases = (
+				OBJ_126 /* Sources */,
+				OBJ_128 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_131 /* PBXTargetDependency */,
+				OBJ_132 /* PBXTargetDependency */,
+			);
+			name = GRProviderTests;
+			productName = GRProviderTests;
+			productReference = "GRProvider::GRProviderTests::Product" /* GRProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"GRProvider::SwiftPMPackageDescription" /* GRProviderPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "GRProviderPackageDescription" */;
+			buildPhases = (
+				OBJ_115 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRProviderPackageDescription;
+			productName = GRProviderPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					B18C770B2483F80400B7E12F = {
+						CreatedOnToolsVersion = 11.4;
+						DevelopmentTeam = A3YWTDH22D;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "GRProvider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"DeepDiff::DeepDiff" /* DeepDiff */,
+				"DeepDiff::SwiftPMPackageDescription" /* DeepDiffPackageDescription */,
+				"GRProvider::GRProvider" /* GRProvider */,
+				"GRProvider::SwiftPMPackageDescription" /* GRProviderPackageDescription */,
+				"GRProvider::GRProviderPackageTests::ProductTarget" /* GRProviderPackageTests */,
+				"GRProvider::GRProviderTests" /* GRProviderTests */,
+				B18C770B2483F80400B7E12F /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B18C770A2483F80400B7E12F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18C777A2483FBD800B7E12F /* Main.storyboard in Resources */,
+				B18C777C2483FBDE00B7E12F /* Assets.xcassets in Resources */,
+				B18C777B2483FBDB00B7E12F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B18C77082483F80400B7E12F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18C77732483F91900B7E12F /* ViewController.swift in Sources */,
+				B18C77672483F8D800B7E12F /* TableViewSampleController.swift in Sources */,
+				B18C77662483F8D800B7E12F /* DiffableTableViewSampleController.swift in Sources */,
+				B18C77692483F8D800B7E12F /* UITableViewExtensions.swift in Sources */,
+				B18C77612483F8D800B7E12F /* SimpleCollectionViewCell.swift in Sources */,
+				B18C777E2483FC2A00B7E12F /* SceneDelegate.swift in Sources */,
+				B18C77702483F8FD00B7E12F /* AppDelegate.swift in Sources */,
+				B18C776A2483F8D800B7E12F /* UICollectionViewExtensions.swift in Sources */,
+				B18C775F2483F8D800B7E12F /* DeppDiffCollectionProviderSampleViewController.swift in Sources */,
+				B18C77632483F8D800B7E12F /* DeepDiffTableProviderSampleViewController.swift in Sources */,
+				B18C776B2483F8D800B7E12F /* UIKitExtensions.swift in Sources */,
+				B18C77642483F8D800B7E12F /* SimpleTableViewCell.swift in Sources */,
+				B18C77652483F8D800B7E12F /* SimpleTableViewSampleController.swift in Sources */,
+				B18C77602483F8D800B7E12F /* CollectionProviderSampleViewController.swift in Sources */,
+				B18C77622483F8D800B7E12F /* SimpleCollectionViewSupplementaryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_116 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_127 /* GRProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_68 /* Heckel.swift in Sources */,
+				OBJ_69 /* WagnerFischer.swift in Sources */,
+				OBJ_70 /* Array+Extensions.swift in Sources */,
+				OBJ_71 /* Change.swift in Sources */,
+				OBJ_72 /* DeepDiff.swift in Sources */,
+				OBJ_73 /* DiffAware.swift in Sources */,
+				OBJ_74 /* MoveReducer.swift in Sources */,
+				OBJ_75 /* IndexPathConverter.swift in Sources */,
+				OBJ_76 /* UICollectionView+Extensions.swift in Sources */,
+				OBJ_77 /* UITableView+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_84 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_90 /* CollectionViewExtensions.swift in Sources */,
+				OBJ_91 /* DPCollectionViewProvider.swift in Sources */,
+				OBJ_92 /* DPDeepDiffCollectionViewProvider.swift in Sources */,
+				OBJ_93 /* DeepDiffCollectionViewBindingExtension.swift in Sources */,
+				OBJ_94 /* DeepDiffCollectionViewUpdateExtensions.swift in Sources */,
+				OBJ_95 /* DeepDiffHelper.swift in Sources */,
+				OBJ_96 /* Displayable.swift in Sources */,
+				OBJ_97 /* FoundationExtensions.swift in Sources */,
+				OBJ_98 /* Sectionable.swift in Sources */,
+				OBJ_99 /* DPSimpleTableViewProvider.swift in Sources */,
+				OBJ_100 /* DPTableViewProvider.swift in Sources */,
+				OBJ_101 /* DPDeepDiffTableViewProvider.swift in Sources */,
+				OBJ_102 /* DeepDiffUpdateExtensions.swift in Sources */,
+				OBJ_103 /* SectionIndexConverter.swift in Sources */,
+				OBJ_104 /* DPDiffableTableViewProvider.swift in Sources */,
+				OBJ_105 /* DiffableBindingExtensions.swift in Sources */,
+				OBJ_106 /* TableViewExtensions.swift in Sources */,
+				OBJ_107 /* TableViewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "DeepDiff::DeepDiff" /* DeepDiff */;
+			targetProxy = B18C77042483F79B00B7E12F /* PBXContainerItemProxy */;
+		};
+		OBJ_121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "GRProvider::GRProviderTests" /* GRProviderTests */;
+			targetProxy = B18C77072483F79D00B7E12F /* PBXContainerItemProxy */;
+		};
+		OBJ_131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "GRProvider::GRProvider" /* GRProvider */;
+			targetProxy = B18C77052483F79B00B7E12F /* PBXContainerItemProxy */;
+		};
+		OBJ_132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "DeepDiff::DeepDiff" /* DeepDiff */;
+			targetProxy = B18C77062483F79B00B7E12F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B18C771D2483F80600B7E12F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3YWTDH22D;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.depo.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B18C771E2483F80600B7E12F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = A3YWTDH22D;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.depo.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		OBJ_113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GRProvider.xcodeproj/GRProviderTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GRProviderTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GRProvider.xcodeproj/GRProviderTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GRProviderTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GRProvider.xcodeproj/DeepDiff_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DeepDiff;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DeepDiff;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GRProvider.xcodeproj/DeepDiff_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DeepDiff;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = DeepDiff;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GRProvider.xcodeproj/GRProvider_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GRProvider;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GRProvider;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GRProvider.xcodeproj/GRProvider_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GRProvider;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GRProvider;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B18C771F2483F80600B7E12F /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18C771D2483F80600B7E12F /* Debug */,
+				B18C771E2483F80600B7E12F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_112 /* Build configuration list for PBXNativeTarget "GRProviderPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_113 /* Debug */,
+				OBJ_114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_118 /* Build configuration list for PBXAggregateTarget "GRProviderPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_119 /* Debug */,
+				OBJ_120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_123 /* Build configuration list for PBXNativeTarget "GRProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_124 /* Debug */,
+				OBJ_125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "GRProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_64 /* Build configuration list for PBXNativeTarget "DeepDiff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_65 /* Debug */,
+				OBJ_66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_80 /* Build configuration list for PBXNativeTarget "DeepDiffPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_81 /* Debug */,
+				OBJ_82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_86 /* Build configuration list for PBXNativeTarget "GRProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_87 /* Debug */,
+				OBJ_88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
