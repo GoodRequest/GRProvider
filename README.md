@@ -285,9 +285,9 @@ tableProvider.configureSectionHeader = { provider, section in
 > ⚠️ Don't forget to setup height of the header. Ex: `tableProvider.heightForHeaderInSection = UITableView.automaticDimension`
 
 6. `configureSectionHeaderHeight: SectionHeaderFooterHeightProvider`  &  `configureSectionFooterHeight: SectionHeaderFooterHeightProvider` & `heightForFooterInSection: CGFloat` & `heightForHeaderInSection: CGFloat`
-You can use one of the property fro mthe list about to configure height for footer or header in section. In case you want to have different sizes use `configure` method. Otherwise use other `heightForFooterInSection` and `heightForHeaderInSection`.
+You can use one of the property from the list about, to configure height for the footer or the header in the section. In case you want to have different sizes use `configure` methods. Otherwise use  `heightForFooterInSection` and `heightForHeaderInSection`.
 7. `configureOnItemSelected: ItemSelectionProvider`
-One of the most used property in provider. Did you click the cell in the list? Setup this closure and you will be notified.
+One of the most used property in the provider. Setup the closure variable to be notified about the selection on the cell.
 ```swift
 tableProvider.configureOnItemSelected = { [unowned self] _, _, _, item in
     switch item {
@@ -303,16 +303,16 @@ tableProvider.configureOnItemSelected = { [unowned self] _, _, _, item in
 8. `configureTrailingSwipeGesture: SwipeGestureProvider` & `configureLeadingSwipeGesture: SwipeGestureProvider`
 10. `configureDidScroll: ScrollProvider`
 9. `configureRefreshGesture: ScrollProvider`
-Closure is notified, when the table view contains the refresh control. When `scrollViewDidEndDragging` executes, it autmatically checks the refresh control `isRefreshing` property and fires the event.
+Closure is fired, when the table view contains the refresh control. When `scrollViewDidEndDragging` executes, it automatically checks the refresh control `isRefreshing` property and fires the event.
 10. `configureDidEndDragging: DidEndDraggingProvider`
 11. `configureWillEndDragging: WillEndDraggingProvider`
 
-### Collection view providers
+### UICollectionView Providers
 
-Right know, we have only one 2 types of CollectionViewProvider
+Right know, we have only one 2 types of CollectionView Providers
 
-1. `GRCollectionViewProvider` -> Default provider for the CollectionView
-2. `GRDeepDiffCollectionViewProvider` -> Inherits all functionality of `GRCollectionViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
+1. `GRCollectionViewProvider` -> Default provider for the `UICollectionView`
+2. `GRDeepDiffCollectionViewProvider` -> Inherits all functionality of the `GRCollectionViewProvider` but uses the `DeepDiff` framework for diffing and animating. More info about the framework, [click here](https://github.com/onmyway133/DeepDiff)
 
 Common features:
 
@@ -332,48 +332,48 @@ Common features:
 14. `minInteritemSpacingForSection: CGFloat`
 
 
-## Animating differences 
+## Animating Differences 
 
 ### GRDeepDiffTableViewProvider 
-DeepDiff is a framework, used in past few years without problem. It's fast with great benchmark against other alghoritms. More about the library and alhgoritm you can find [here](https://github.com/onmyway133/DeepDiff).
+DeepDiff is a framework, used in past few years. It's fast with great benchmark against other alghoritms. More info about the library and alghoritm find [here](https://github.com/onmyway133/DeepDiff).
 
-It works simillarly to `GRDiffableTableViewProvider`, with same API but....
+It works simillarly to the `GRDiffableTableViewProvider`, with same API but....
 
 #### What is different?
 
-1. You Section/Item model definition must comform to `DiffAware` protocol
-2. Constructor **doesn't** require instance of the TableView unlike `DeepDiffTableViewProvider`.
-3. You can modify the animation for insertion, deletion and replacement what is not currently possible in `DeepDiffTableViewProvider`
-4. Available for all versions of iOS starting iOS 11
+1. Your Section/Item model definition must comform to the `DiffAware` protocol.
+2. Constructor **doesn't** require instance of the `UITableView` unlike the `DeepDiffTableViewProvider`.
+3. You can modify the animation for the insertion, deletion and replacement, what is not currently possible using the `DeepDiffTableViewProvider`.
+4. Available for all versions of iOS starting iOS 11.
 
 ![](Resources/DeepDiff.gif)
 
 ### GRDiffableTableViewProvider #iOS13
-Apple has released new API for animating differences in table views and collection views called `UITableViewDiffableDataSource`.
-You can find documentation [here](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource).
+Apple has released the new API for animating differences in table views and collection views called `UITableViewDiffableDataSource`.
+You can find the documentation [here](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource).
 
-GRProvider uses it's benefits and provides you an custom implementation: `GRDiffableTableViewProvider`.
-It uses the same API as other providers, so you don't need to worry about learning curve. All providers shares their API.
+GRProvider uses it's benefits and provides you a custom implementation benefitting on the `GRDiffableTableViewProvider`.
+It uses the same API as other providers, so you don't need to worry about the learning curve. All providers shares their API.
 
 #### What is different?
 
-1. You Section/Item model definition must comform to `Hashable` protocol
-2. Constructor of the `GRDiffableTableViewProvider` requires instance of the TableView you will use in items binding.
+1. You Section/Item model definition must comform to the `Hashable` protocol.
+2. Constructor of the `GRDiffableTableViewProvider` requires instance of the `UITableView` you will use in items binding.
 
-There 2 things are required to animate your items differences in the table view. 
+These 2 things are required to animate your items differences in the table view. 
 
 ![](Resources/Diffable.gif)
 
 ### GRDeepDiffCollectionViewProvider 
-Similar to [this section](#GRDeepDiffTableViewProvider)
+Similarly to [this section](#GRDeepDiffTableViewProvider)
 
 ![](Resources/DeepDiffCollection.gif)
 
 ## Are you missing something?
 
-Just subclass one of the provider and create addtional functionality. It's that simple.
+Just make a subclass of one of the providers and create aditional functionality. It's that simple.
 
-> ⚠️ Be careful of overriding the current functionality. Use `super` to prevent mistakes. 
+> ⚠️ Be careful of overriding the current functionality. Use `super` to prevent misunderstanding. 
 
 ### For example
 
