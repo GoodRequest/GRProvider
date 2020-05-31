@@ -17,7 +17,7 @@
     *  [Table View Provider](#table-view-providers)
     *  [Collection View Provider](#collection-view-provider)
 *  [Animations](#animating-differences)
-*  [Are you missing something?](#are-you-missing-something)
+*  [Are you missing some property configuration?](#are-you-missing-some-property-configuration)
 *  [Installation](#installation)
 *  [License](#license)
 
@@ -369,7 +369,7 @@ Similarly to [this section](#GRDeepDiffTableViewProvider)
 
 ![](Resources/DeepDiffCollection.gif)
 
-## Are you missing something?
+## Are you missing some property configuration?
 
 Just make a subclass of one of the providers and create aditional functionality. It's that simple.
 
