@@ -22,30 +22,31 @@
 *  [License](#license)
 
 ## Why to use?
-Writing simple scanario, where you want to use basic implementation of UITableView or UICollectionView is tedious. 
-You have to implement a lot of delegate methods, even for the simplest case possible.
+Writing the simple scanario, where you want to use the basic implementation of the UITableView or UICollectionView is tedious. 
+You have to implement a lot of delegate methods, even for the simplest use-case.
 I
-Example:  `UITableViewDiffableDataSource` accessible in iOS 13 as an simple approach of loading/diffing data in TableView 
+Example:  `UITableViewDiffableDataSource` accessible in **iOS 13** is a simple approach of loading/diffing data in TableView 
 
 Learning curve is a little bit tedious, but it's worth for the future programing.
 
 **👍 Advantages:**
-- atomic data
-- one source of truth
-- no need to do custom diffing mechanism
+- atomic data binding
+- one source of the truth
+- no need to do the custom diffing mechanism
 - avoids synchronization bugs, exceptions and crashes
 - avoids side effects
-- uniform approach for the simple data provider, data provider using DeepDiff library or data provider using DiffableDataSource
+- uniform approach accross all providers
+- simple usage of animations using provider with **DeepDiff** library or provider using `UITableViewDiffableDataSource`
 
 **👎 Disadvantages:**
 - learning curve
-- Not a good solution for complicated/advanced usage of the TableView or CollectionView
-- different approach than standard Apple iOS API
-- usage of third part diffing library DeepDiff
-- only the most used delegates methods bridged to declarative way
+- Not a good solution for the complicated/advanced usa case of the TableView or CollectionView
+- different approach than the standard Apple iOS API
+- usage of the third part diffing library DeepDiff
+- contains only the most used delegates methods 
 - still in **development** process
 
-Look at this simple code you just need to write:
+Look at this simple code you just need to write, to show data in Table View:
 ```swift
 lazy var tableProvider = GRSimpleTableViewProvider<Int> { _, tv, indexPath, item in
     guard let cell = tv.dequeueReusableCell(fromClass: SimpleTableViewCell.self, for: indexPath) else { return UITableViewCell() }
@@ -57,26 +58,26 @@ private func showItems() {
     tableView.items(tableProvider, items: [1, 2, 3, 4, 5, 6, 7], animated: true)
 }
 ```
-That's all you need to do, when showing simple data in the TableView. 
+That's all you need to do, when showing simple data in the **TableView**. 
 Isn't it great? That's all you need to do. 
 
 No need of:
 - assigning `tableView.delegate = self` & `tableView.dataSource = self` 
 - implementation of any DataSource/Delegate methods
-- No need of casting/accessing the cell item property in collections (Arrays etc.)
+- No need of casting/accessing the cell item property in collection (Arrays etc.)
 
 
 ## How to use?
 
 You can use this type of GRProviders:
-1. `GRSimpleTableViewProvider` -> use in case you have just one section in your TableView
-2. `GRTableViewProvider` -> Default provider for the TableView
-3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing
-4. `DeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
-4. `GRCollectionViewProvider` -> Default provider for the CollectionView
+1. `GRSimpleTableViewProvider` -> Use in case of you have just one section in the `UITableView`
+2. `GRTableViewProvider` -> Default provider for the `UITableView`
+3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing and animating
+4. `GRDeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing and animating. More info about framework [click here](https://github.com/onmyway133/DeepDiff).
+5. `GRCollectionViewProvider` -> Default provider for the CollectionView
 
-### Define model 
-Firstly you need to model your data, showed in the TableView or CollectionView using any type you choose.
+#### Define model 
+Firstly you need to model your data, showed in the `UITableView` or `UICollectionView` using any type you choose.
 
 For example:
 
@@ -93,7 +94,7 @@ enum Section: Sectionable {
     
 }
 
-///using Class as Section & Enum as Item
+///using Class as a Section & Enum as an Item
 class Section: Sectionable {
     let items: [Item]
     
@@ -113,9 +114,9 @@ enum Item {
 }
 
 ```
-You can model it, based on your preference. 
+You can model it, based on your preference. It's all up to you.
 
-### Create the instance of table view and provider you choose
+#### Create the instance of `UITableView` and `provider` you choose
 
 ```swift
 
@@ -124,7 +125,7 @@ private let tableProvider = GRSimpleTableViewProvider<Item>()
 
 ```
 
-### Setup you provider
+### Setup your provider
 
 ```swift
 
@@ -143,7 +144,7 @@ private func setupTableProvider() {
 
 ```
 
-### Show items in table view
+### Show items in the `UITableView`
 
 ```swift
 
@@ -158,7 +159,7 @@ private func showItems() {
 }
 
 ```
-🔥 That's it. All you need to do to show simple list with 2 advertisements and title in few lines of code. 🔥
+🔥 That's it. All you need to do to show the simple list with 2 advertisements and title in few lines of code. 🔥
 
 ### All together
 Show list of strings in table view.
@@ -167,7 +168,7 @@ Show list of strings in table view.
 import UIKit
 import GRProvider
 
-class SimpleTableViewSampleController: UIViewController {
+class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -201,17 +202,17 @@ class SimpleTableViewSampleController: UIViewController {
 ```
 
 >[!WARNING]
-> ⚠️⚠️⚠️  **Retain cycle**: Be careful when using strong reference inside closure. In case you need to call  ```self``` inside the closure, don't forget to use ```[unowned self]``` or ```[weak self]```
+> ⚠️⚠️⚠️  **Retain cycle**: Be careful when using strong reference inside the closure. In case you need to call  `self` inside the closure, don't forget to use `[unowned self]` or `[weak self]`
 
 ## Features
-### Table view providers
+### UITableView Providers
 
-You can choose one of these types of providers
+You can choose one of these types of providers:
 
-1. `GRSimpleTableViewProvider` -> use in case you have just one section in your TableView
-2. `GRTableViewProvider` -> Default provider for the TableView
-3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing
-4. `GRDeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing. More info about framework, [click here](https://github.com/onmyway133/DeepDiff)
+1. `GRSimpleTableViewProvider` -> Use in case of you have just one section in the `UITableView`
+2. `GRTableViewProvider` -> Default provider for the `UITableView`
+3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing and animating
+4. `GRDeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing and animating. More info about framework [click here](https://github.com/onmyway133/DeepDiff).
 
 Common features:
 
@@ -247,7 +248,7 @@ tableProvider.configureCellHeight = { _, _, _, item in
 }
 ```
 4. `configureCell: CellProvider`
-Configuration for dequeueing cell based on the model provided in provider instance definition.
+Configuration for dequeueing cell based on the model provided in the provider instance.
 ```swift
 tableProvider.configureCell = { provider, tableView, index, item in              
     switch title {
@@ -261,7 +262,7 @@ tableProvider.configureCell = { provider, tableView, index, item in
 }
 ```
 5. `configureSectionHeader: SectionHeaderFooterProvider` & `configureSectionFooter: SectionHeaderFooterProvider`
-Return UIView showed in the header or footer.
+Returns `UIView` showed in the header or te footer.
 
 ```swift
 tableProvider.configureSectionHeader = { provider, section in
@@ -281,7 +282,7 @@ tableProvider.configureSectionHeader = { provider, section in
     return container
 }
 ```
-> ⚠️ Don't forget to setup height of the header. Ex: ```tableProvider.heightForHeaderInSection = UITableView.automaticDimension```
+> ⚠️ Don't forget to setup height of the header. Ex: `tableProvider.heightForHeaderInSection = UITableView.automaticDimension`
 
 6. `configureSectionHeaderHeight: SectionHeaderFooterHeightProvider`  &  `configureSectionFooterHeight: SectionHeaderFooterHeightProvider` & `heightForFooterInSection: CGFloat` & `heightForHeaderInSection: CGFloat`
 You can use one of the property fro mthe list about to configure height for footer or header in section. In case you want to have different sizes use `configure` method. Otherwise use other `heightForFooterInSection` and `heightForHeaderInSection`.
