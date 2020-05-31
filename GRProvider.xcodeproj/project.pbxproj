@@ -165,15 +165,26 @@
 		OBJ_50 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_55 /* GRProvider.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = GRProvider.xcworkspace; sourceTree = SOURCE_ROOT; };
 		OBJ_56 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
-		OBJ_57 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
 		OBJ_59 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_61 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		OBJ_62 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		35B90A085B5427AD74CA89BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58203EB338DA0C2B0EB526B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B18C77092483F80400B7E12F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,13 +276,6 @@
 				B18C775B2483F8D700B7E12F /* UIKitExtensions.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		B18C77782483FBAE00B7E12F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		OBJ_19 /* Table View */ = {
@@ -389,10 +393,6 @@
 				OBJ_51 /* Products */,
 				OBJ_55 /* GRProvider.xcworkspace */,
 				OBJ_56 /* Resources */,
-				OBJ_57 /* Pods */,
-				OBJ_61 /* Podfile */,
-				OBJ_62 /* Podfile.lock */,
-				B18C77782483FBAE00B7E12F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -481,6 +481,7 @@
 			buildConfigurationList = OBJ_80 /* Build configuration list for PBXNativeTarget "DeepDiffPackageDescription" */;
 			buildPhases = (
 				OBJ_83 /* Sources */,
+				58203EB338DA0C2B0EB526B5 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -530,6 +531,7 @@
 			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "GRProviderPackageDescription" */;
 			buildPhases = (
 				OBJ_115 /* Sources */,
+				35B90A085B5427AD74CA89BD /* Frameworks */,
 			);
 			buildRules = (
 			);
