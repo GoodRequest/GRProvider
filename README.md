@@ -116,7 +116,7 @@ enum Item {
 ```
 You can model it, based on your preference. It's all up to you.
 
-#### Create the instance of `UITableView` and `provider` you choose
+#### Create the instance of the `UITableView` and `provider` you choose
 
 ```swift
 
@@ -131,7 +131,7 @@ private let tableProvider = GRSimpleTableViewProvider<Item>()
 
 private func setupTableProvider() {            
     tableProvider.configureCell = { provider, tableView, index, item in              
-        switch title {
+        switch item {
         case .advertisement:
         return tableView.dequeueReusableCell(....)
         case .divider:
