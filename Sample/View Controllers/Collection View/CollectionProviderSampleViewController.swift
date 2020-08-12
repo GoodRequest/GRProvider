@@ -67,7 +67,7 @@ final class CollectionProviderViewSampleController: UIViewController {
             return cell
         }
         
-        tableProvider.configureOnItemSelected = { [unowned self] _, _, item in
+        tableProvider.configureOnItemSelected = { [unowned self] _, _, _, item in
             let alert = UIAlertController(title: "Wow!", message: "You clicked an item: \(item)", preferredStyle: .alert)
             alert.addAction(.init(title: "Cancel", style: .cancel, handler: nil))
             self.present(alert, animated: true)

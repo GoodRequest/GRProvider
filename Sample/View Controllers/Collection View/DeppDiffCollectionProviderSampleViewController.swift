@@ -83,7 +83,7 @@ final class DeepDiffCollectionProviderViewSampleController: UIViewController {
     @IBOutlet weak var slider: CollectionItemsGeneratorSlider!
     @IBOutlet weak var stepLabel: UILabel!
     
-    fileprivate lazy var tableProvider = GRDeepDiffCollectionViewProvider<Section>()
+    fileprivate lazy var collectionProvider = GRDeepDiffCollectionViewProvider<Section>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,15 +94,15 @@ final class DeepDiffCollectionProviderViewSampleController: UIViewController {
     }
     
     private func setupTableView() {
-        tableProvider.configureCellSize = { _, cv, index, item in
+        collectionProvider.configureCellSize = { _, cv, index, item in
             return CGSize(width: (cv.frame.width - 21) / 3, height: (cv.frame.width - 21) / 3)
         }
         
-        tableProvider.sectionInsets = .init(top: 0, left: 5, bottom: 0, right: 5)
-        tableProvider.minimumLineSpacingForSection = 5
-        tableProvider.minInteritemSpacingForSection = 5
+        collectionProvider.sectionInsets = .init(top: 0, left: 5, bottom: 0, right: 5)
+        collectionProvider.minimumLineSpacingForSection = 5
+        collectionProvider.minInteritemSpacingForSection = 5
         
-        tableProvider.configureSupplementaryElementOfKind = { provider, cv, index, type in
+        collectionProvider.configureSupplementaryElementOfKind = { provider, cv, index, type in
             debugPrint(type)
             let section = provider.sections[index.section]
             let view = cv.dequeueReusableSupplementaryView(ofKind: type, fromClass: SimpleCollectionViewSupplementaryView.self, for: index)
@@ -110,13 +110,13 @@ final class DeepDiffCollectionProviderViewSampleController: UIViewController {
             return view
         }
         
-        tableProvider.configureCell = { _, tv, indexPath, item in
+        collectionProvider.configureCell = { _, tv, indexPath, item in
             let cell = tv.dequeueReusableCell(fromClass: SimpleCollectionViewCell.self, for: indexPath)
             cell.titleLabel.text = item.title
             return cell
         }
         
-        tableProvider.configureOnItemSelected = { [unowned self] _, _, item in
+        collectionProvider.configureOnItemSelected = { [unowned self] _, _, _, item in
             let alert = UIAlertController(title: "Wow!", message: "You clicked an item: \(item)", preferredStyle: .alert)
             alert.addAction(.init(title: "Cancel", style: .cancel, handler: nil))
             self.present(alert, animated: true)
@@ -129,12 +129,12 @@ final class DeepDiffCollectionProviderViewSampleController: UIViewController {
         
         slider.onStepChanged = { [weak self] in
             guard let `self` = self else { return }
-            self.tableProvider.bind(to: self.collectionView, sections: $1.sections)
+            self.collectionProvider.bind(to: self.collectionView, sections: $1.sections)
             self.stepLabel.text = "Step \($0)/\(steps.count)"
         }
         
         DispatchQueue.main.async { [unowned self] in
-            self.tableProvider.bind(to: self.collectionView, sections: steps[0].sections)
+            self.collectionProvider.bind(to: self.collectionView, sections: steps[0].sections)
             self.stepLabel.text = "Step 1/\(steps.count)"
         }
         
