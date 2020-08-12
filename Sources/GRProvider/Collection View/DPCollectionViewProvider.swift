@@ -16,7 +16,7 @@ open class GRCollectionViewProvider<Section: Sectionable>: NSObject, UICollectio
     public typealias SupplementaryViewProvider = (GRCollectionViewProvider, UICollectionView, IndexPath, String) -> UICollectionReusableView
     public typealias SwipeGestureProvider = (GRCollectionViewProvider, UICollectionView, IndexPath, Section.Item) -> ([UIContextualAction])
     public typealias SectionInsetProvider = (GRCollectionViewProvider, UICollectionView, Section) -> UIEdgeInsets
-    public typealias ItemSelectionProvider = (GRCollectionViewProvider, UICollectionView, Section.Item) -> ()
+    public typealias ItemSelectionProvider = (GRCollectionViewProvider, UICollectionView, IndexPath, Section.Item) -> ()
     public typealias MinLineSpacingProvider = (GRCollectionViewProvider, UICollectionView, Section) -> CGFloat
     
     public typealias ScrollProvider = (UIScrollView) -> ()
@@ -132,7 +132,7 @@ open class GRCollectionViewProvider<Section: Sectionable>: NSObject, UICollectio
         
     open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = sections[indexPath]
-        configureOnItemSelected?(self, collectionView, selectedItem)
+        configureOnItemSelected?(self, collectionView, indexPath, selectedItem)
     }
     
     open func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
