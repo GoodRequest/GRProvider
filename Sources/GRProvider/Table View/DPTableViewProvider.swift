@@ -28,21 +28,21 @@ open class GRTableViewProvider<Section: Sectionable>: TableViewProvider<Section>
     open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         var frame = CGRect.zero
         frame.size.height = .leastNormalMagnitude
-        return configureSectionHeader?(self, section) ?? UIView(frame: frame)
+        return configureSectionHeader?(self, tableView, section, sections[section]) ?? UIView(frame: frame)
     }
     
     open func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         var frame = CGRect.zero
         frame.size.height = .leastNormalMagnitude
-        return configureSectionFooter?(self, section) ?? UIView(frame: frame)
+        return configureSectionFooter?(self, tableView, section, sections[section]) ?? UIView(frame: frame)
     }
     
     open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        (heightForFooterInSection ?? configureSectionFooterHeight?(self, section)) ?? 0
+        (heightForFooterInSection ?? configureSectionFooterHeight?(self, tableView, section, sections[section])) ?? 0
     }
     
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        (heightForHeaderInSection ?? configureSectionHeaderHeight?(self, section)) ?? 0
+        (heightForHeaderInSection ?? configureSectionHeaderHeight?(self, tableView, section, sections[section])) ?? 0
     }
     
     open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {

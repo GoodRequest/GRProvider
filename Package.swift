@@ -20,6 +20,10 @@ let package = Package(
             name: "GRProvider",
             dependencies: ["DeepDiff"],
             path: "Sources"),
+        .target(
+        name: "GRProviderSample",
+        dependencies: ["GRProvider"],
+        path: "Sample"),
         .testTarget(
             name: "GRProviderTests",
             dependencies: ["GRProvider"]),

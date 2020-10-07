@@ -56,14 +56,14 @@ open class GRDiffableTableViewProvider<Section: Sectionable>: TableViewProvider<
     open override var configureSectionHeader: SectionHeaderFooterProvider? {
         didSet {
             diffableTableViewProvider.configureSectionHeader = { [unowned self] in
-                self.configureSectionHeader?(self, $0)
+                self.configureSectionHeader?(self, self.tableView, $0, self.sections[$0])
             }
         }
     }
     open override var configureSectionFooter: SectionHeaderFooterProvider? {
         didSet {
             diffableTableViewProvider.configureSectionFooter = { [unowned self] in
-                self.configureSectionFooter?(self, $0)
+                self.configureSectionFooter?(self, self.tableView, $0, self.sections[$0])
             }
         }
     }
@@ -71,14 +71,14 @@ open class GRDiffableTableViewProvider<Section: Sectionable>: TableViewProvider<
     open override var configureSectionHeaderHeight: SectionHeaderFooterHeightProvider? {
         didSet {
             diffableTableViewProvider.configureSectionHeaderHeight = { [unowned self] in
-                self.configureSectionHeaderHeight?(self, $0)
+                self.configureSectionHeaderHeight?(self, self.tableView, $0, self.sections[$0])
             }
         }
     }
     open override var configureSectionFooterHeight: SectionHeaderFooterHeightProvider? {
         didSet {
             diffableTableViewProvider.configureSectionFooterHeight = { [unowned self] in
-                self.configureSectionFooterHeight?(self, $0)
+                self.configureSectionFooterHeight?(self, self.tableView, $0, self.sections[$0])
             }
         }
     }

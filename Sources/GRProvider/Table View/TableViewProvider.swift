@@ -17,8 +17,8 @@ open class TableViewProvider<Section: Sectionable>: NSObject {
 
     public typealias CellProvider = (TableViewProvider, UITableView, IndexPath, Section.Item) -> UITableViewCell?
     public typealias CellHeightProvider = (TableViewProvider, UITableView, IndexPath, Section.Item) -> CGFloat
-    public typealias SectionHeaderFooterProvider = (TableViewProvider, Int) -> UIView?
-    public typealias SectionHeaderFooterHeightProvider = (TableViewProvider, Int) -> CGFloat?
+    public typealias SectionHeaderFooterProvider = (TableViewProvider, UITableView, Int, Section) -> UIView?
+    public typealias SectionHeaderFooterHeightProvider = (TableViewProvider, UITableView, Int, Section) -> CGFloat?
     public typealias SwipeGestureProvider = (TableViewProvider, UITableView, IndexPath, Section.Item) -> ([UIContextualAction])
     public typealias ItemSelectionProvider = (TableViewProvider, UITableView, IndexPath, Section.Item) -> ()
     

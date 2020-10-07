@@ -47,7 +47,7 @@ class TableViewSampleController: UIViewController {
         
         tableProvider.heightForHeaderInSection = UITableView.automaticDimension
         
-        tableProvider.configureSectionHeader = { provider, section in
+        tableProvider.configureSectionHeader = { _, _, _, section in
             let container = UIView()
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -59,7 +59,7 @@ class TableViewSampleController: UIViewController {
             label.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -15).isActive = true
             label.rightAnchor.constraint(equalTo: container.rightAnchor, constant: -15).isActive = true
 
-            label.text = provider.sections[section].title
+            label.text = section.title
 
             return container
         }
