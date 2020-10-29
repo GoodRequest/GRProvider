@@ -3,12 +3,12 @@
 //  GRProvider
 //
 //  Created by Dominik Pethö on 5/18/20.
-//  Copyright © 2020 Depo. All rights reserved.
+//  Copyright © 2020 GoodRequest. All rights reserved.
 //
 
 import UIKit
 
-///Basic table provider implementation.
+/// Basic table provider implementation.
 open class TableViewProvider<Section: Sectionable>: NSObject {
     
     // MARK: - Factories
@@ -36,13 +36,13 @@ open class TableViewProvider<Section: Sectionable>: NSObject {
     /// List of sections
     internal (set) public var sections: [Section] = []
     
-    ///Configure cells based on the section item.
+    /// Configure cells based on the section item.
     open var configureCell: CellProvider? = nil
     
-    ///Configure cell height based on the cell section item
+    /// Configure cell height based on the cell section item
     open var configureCellHeight: CellHeightProvider? = nil
     
-    ///Configure estimated cell height based on the cell section item
+    /// Configure estimated cell height based on the cell section item
     open var configureEstimatedCellHeight: CellHeightProvider? = nil {
         didSet {
             guard estimatedHeightForRow != nil else { return }
@@ -50,12 +50,12 @@ open class TableViewProvider<Section: Sectionable>: NSObject {
         }
     }
     
-    ///Return an UIView of the header in the section
+    /// Return an UIView of the header in the section
     open var configureSectionHeader: SectionHeaderFooterProvider? = nil
-    ///Return an UIView of the footer in the section
+    /// Return an UIView of the footer in the section
     open var configureSectionFooter: SectionHeaderFooterProvider? = nil
     
-    ///Configure height of the header based on the selected section
+    /// Configure height of the header based on the selected section
     open var configureSectionHeaderHeight: SectionHeaderFooterHeightProvider? = nil {
         didSet {
             guard heightForHeaderInSection != nil else { return }
@@ -63,7 +63,7 @@ open class TableViewProvider<Section: Sectionable>: NSObject {
         }
     }
     
-    ///Configure height of the footer based on the selected section
+    /// Configure height of the footer based on the selected section
     open var configureSectionFooterHeight: SectionHeaderFooterHeightProvider? = nil {
         didSet {
             guard heightForFooterInSection != nil else { return }
@@ -71,7 +71,7 @@ open class TableViewProvider<Section: Sectionable>: NSObject {
         }
     }
     
-    ///Configure on item selection action based on the selected item
+    /// Configure on item selection action based on the selected item
     open var configureOnItemSelected: ItemSelectionProvider? = nil
     
     /// Configures trailing swipe gesture. Should return and array of the UIContextualAction.

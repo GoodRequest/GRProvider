@@ -34,17 +34,16 @@
 		B18C776A2483F8D800B7E12F /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C775A2483F8D700B7E12F /* UICollectionViewExtensions.swift */; };
 		B18C776B2483F8D800B7E12F /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C775B2483F8D700B7E12F /* UIKitExtensions.swift */; };
 		B18C77702483F8FD00B7E12F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C776E2483F8FD00B7E12F /* AppDelegate.swift */; };
-		B18C77732483F91900B7E12F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C77722483F91800B7E12F /* ViewController.swift */; };
 		B18C77792483FBAE00B7E12F /* GRProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "GRProvider::GRProvider::Product" /* GRProvider.framework */; };
 		B18C777A2483FBD800B7E12F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C775C2483F8D700B7E12F /* Main.storyboard */; };
 		B18C777B2483FBDB00B7E12F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C775D2483F8D700B7E12F /* LaunchScreen.storyboard */; };
 		B18C777C2483FBDE00B7E12F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18C77742483F94B00B7E12F /* Assets.xcassets */; };
 		B18C777E2483FC2A00B7E12F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */; };
-		OBJ_100 /* DPTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DPTableViewProvider.swift */; };
-		OBJ_101 /* DPDeepDiffTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DPDeepDiffTableViewProvider.swift */; };
+		OBJ_100 /* GRTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* GRTableViewProvider.swift */; };
+		OBJ_101 /* GRDeepDiffTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* GRDeepDiffTableViewProvider.swift */; };
 		OBJ_102 /* DeepDiffUpdateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DeepDiffUpdateExtensions.swift */; };
 		OBJ_103 /* SectionIndexConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SectionIndexConverter.swift */; };
-		OBJ_104 /* DPDiffableTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* DPDiffableTableViewProvider.swift */; };
+		OBJ_104 /* GRDiffableTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* GRDiffableTableViewProvider.swift */; };
 		OBJ_105 /* DiffableBindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* DiffableBindingExtensions.swift */; };
 		OBJ_106 /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* TableViewExtensions.swift */; };
 		OBJ_107 /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* TableViewProvider.swift */; };
@@ -65,15 +64,15 @@
 		OBJ_77 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* UITableView+Extensions.swift */; };
 		OBJ_84 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Package.swift */; };
 		OBJ_90 /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* CollectionViewExtensions.swift */; };
-		OBJ_91 /* DPCollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DPCollectionViewProvider.swift */; };
-		OBJ_92 /* DPDeepDiffCollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DPDeepDiffCollectionViewProvider.swift */; };
+		OBJ_91 /* GRCollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* GRCollectionViewProvider.swift */; };
+		OBJ_92 /* GRDeepDiffCollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* GRDeepDiffCollectionViewProvider.swift */; };
 		OBJ_93 /* DeepDiffCollectionViewBindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */; };
 		OBJ_94 /* DeepDiffCollectionViewUpdateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */; };
 		OBJ_95 /* DeepDiffHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* DeepDiffHelper.swift */; };
 		OBJ_96 /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Displayable.swift */; };
 		OBJ_97 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* FoundationExtensions.swift */; };
 		OBJ_98 /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Sectionable.swift */; };
-		OBJ_99 /* DPSimpleTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DPSimpleTableViewProvider.swift */; };
+		OBJ_99 /* GRSimpleTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* GRSimpleTableViewProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +124,6 @@
 		B18C775D2483F8D700B7E12F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18C776E2483F8FD00B7E12F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18C776F2483F8FD00B7E12F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B18C77722483F91800B7E12F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Sample/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		B18C77742483F94B00B7E12F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B18C777F2483FCCB00B7E12F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -133,20 +131,20 @@
 		"GRProvider::GRProvider::Product" /* GRProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"GRProvider::GRProviderTests::Product" /* GRProviderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = GRProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
-		OBJ_11 /* DPCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPCollectionViewProvider.swift; sourceTree = "<group>"; };
-		OBJ_12 /* DPDeepDiffCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDeepDiffCollectionViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_11 /* GRCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRCollectionViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_12 /* GRDeepDiffCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDeepDiffCollectionViewProvider.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffCollectionViewBindingExtension.swift; sourceTree = "<group>"; };
 		OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffCollectionViewUpdateExtensions.swift; sourceTree = "<group>"; };
 		OBJ_15 /* DeepDiffHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffHelper.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
 		OBJ_17 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		OBJ_18 /* Sectionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sectionable.swift; sourceTree = "<group>"; };
-		OBJ_20 /* DPSimpleTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPSimpleTableViewProvider.swift; sourceTree = "<group>"; };
-		OBJ_21 /* DPTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPTableViewProvider.swift; sourceTree = "<group>"; };
-		OBJ_23 /* DPDeepDiffTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDeepDiffTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_20 /* GRSimpleTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRSimpleTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_21 /* GRTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_23 /* GRDeepDiffTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDeepDiffTableViewProvider.swift; sourceTree = "<group>"; };
 		OBJ_24 /* DeepDiffUpdateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepDiffUpdateExtensions.swift; sourceTree = "<group>"; };
 		OBJ_25 /* SectionIndexConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionIndexConverter.swift; sourceTree = "<group>"; };
-		OBJ_27 /* DPDiffableTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPDiffableTableViewProvider.swift; sourceTree = "<group>"; };
+		OBJ_27 /* GRDiffableTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDiffableTableViewProvider.swift; sourceTree = "<group>"; };
 		OBJ_28 /* DiffableBindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableBindingExtensions.swift; sourceTree = "<group>"; };
 		OBJ_29 /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
 		OBJ_30 /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
@@ -225,7 +223,6 @@
 			children = (
 				B18C77582483F8D700B7E12F /* Common */,
 				B18C774B2483F8D700B7E12F /* View Controllers */,
-				B18C77722483F91800B7E12F /* ViewController.swift */,
 				B18C775D2483F8D700B7E12F /* LaunchScreen.storyboard */,
 				B18C775C2483F8D700B7E12F /* Main.storyboard */,
 				B18C77742483F94B00B7E12F /* Assets.xcassets */,
@@ -281,8 +278,8 @@
 		OBJ_19 /* Table View */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* DPSimpleTableViewProvider.swift */,
-				OBJ_21 /* DPTableViewProvider.swift */,
+				OBJ_20 /* GRSimpleTableViewProvider.swift */,
+				OBJ_21 /* GRTableViewProvider.swift */,
 				OBJ_22 /* Deep Diff */,
 				OBJ_26 /* Diffable */,
 				OBJ_29 /* TableViewExtensions.swift */,
@@ -294,7 +291,7 @@
 		OBJ_22 /* Deep Diff */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* DPDeepDiffTableViewProvider.swift */,
+				OBJ_23 /* GRDeepDiffTableViewProvider.swift */,
 				OBJ_24 /* DeepDiffUpdateExtensions.swift */,
 				OBJ_25 /* SectionIndexConverter.swift */,
 			);
@@ -304,7 +301,7 @@
 		OBJ_26 /* Diffable */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_27 /* DPDiffableTableViewProvider.swift */,
+				OBJ_27 /* GRDiffableTableViewProvider.swift */,
 				OBJ_28 /* DiffableBindingExtensions.swift */,
 			);
 			path = Diffable;
@@ -432,8 +429,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_10 /* CollectionViewExtensions.swift */,
-				OBJ_11 /* DPCollectionViewProvider.swift */,
-				OBJ_12 /* DPDeepDiffCollectionViewProvider.swift */,
+				OBJ_11 /* GRCollectionViewProvider.swift */,
+				OBJ_12 /* GRDeepDiffCollectionViewProvider.swift */,
 				OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */,
 				OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */,
 			);
@@ -601,7 +598,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18C77732483F91900B7E12F /* ViewController.swift in Sources */,
 				B18C77672483F8D800B7E12F /* TableViewSampleController.swift in Sources */,
 				B18C77662483F8D800B7E12F /* DiffableTableViewSampleController.swift in Sources */,
 				B18C77692483F8D800B7E12F /* UITableViewExtensions.swift in Sources */,
@@ -665,20 +661,20 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_90 /* CollectionViewExtensions.swift in Sources */,
-				OBJ_91 /* DPCollectionViewProvider.swift in Sources */,
-				OBJ_92 /* DPDeepDiffCollectionViewProvider.swift in Sources */,
+				OBJ_91 /* GRCollectionViewProvider.swift in Sources */,
+				OBJ_92 /* GRDeepDiffCollectionViewProvider.swift in Sources */,
 				OBJ_93 /* DeepDiffCollectionViewBindingExtension.swift in Sources */,
 				OBJ_94 /* DeepDiffCollectionViewUpdateExtensions.swift in Sources */,
 				OBJ_95 /* DeepDiffHelper.swift in Sources */,
 				OBJ_96 /* Displayable.swift in Sources */,
 				OBJ_97 /* FoundationExtensions.swift in Sources */,
 				OBJ_98 /* Sectionable.swift in Sources */,
-				OBJ_99 /* DPSimpleTableViewProvider.swift in Sources */,
-				OBJ_100 /* DPTableViewProvider.swift in Sources */,
-				OBJ_101 /* DPDeepDiffTableViewProvider.swift in Sources */,
+				OBJ_99 /* GRSimpleTableViewProvider.swift in Sources */,
+				OBJ_100 /* GRTableViewProvider.swift in Sources */,
+				OBJ_101 /* GRDeepDiffTableViewProvider.swift in Sources */,
 				OBJ_102 /* DeepDiffUpdateExtensions.swift in Sources */,
 				OBJ_103 /* SectionIndexConverter.swift in Sources */,
-				OBJ_104 /* DPDiffableTableViewProvider.swift in Sources */,
+				OBJ_104 /* GRDiffableTableViewProvider.swift in Sources */,
 				OBJ_105 /* DiffableBindingExtensions.swift in Sources */,
 				OBJ_106 /* TableViewExtensions.swift in Sources */,
 				OBJ_107 /* TableViewProvider.swift in Sources */,

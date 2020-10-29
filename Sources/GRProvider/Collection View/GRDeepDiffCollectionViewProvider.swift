@@ -3,6 +3,7 @@
 //  Sample
 //
 //  Created by Dominik Pethö on 5/31/20.
+//  Copyright © 2020 GoodRequest. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +16,7 @@ Section.Item: DiffAware {
         bind(to: collectionView, sections: sections, onComplete: onComplete)
     }
     
-    ///Binds items to collection view with using DeepDiff framework. Animates sections and cells using `performBatchUpdate` method
+    /// Binds items to collection view with using DeepDiff framework. Animates sections and cells using `performBatchUpdate` method
     public func bind(to collectionView: UICollectionView,
                                 sections: [Section],
                                 onComplete: @escaping () -> () = {}) {

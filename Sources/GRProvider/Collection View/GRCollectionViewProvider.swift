@@ -3,7 +3,7 @@
 //  GRProvider
 //
 //  Created by Dominik Pethö on 5/18/20.
-//  Copyright © 2020 Depo. All rights reserved.
+//  Copyright © 2020 GoodRequest. All rights reserved.
 //
 
 import DeepDiff
@@ -25,16 +25,16 @@ open class GRCollectionViewProvider<Section: Sectionable>: NSObject, UICollectio
     
     weak var collectionView: UICollectionView!
     
-    ///Arrat of sections
+    /// Array of sections
     internal (set) public var sections: [Section] = []
     
-    ///Configure cells based on the section item.
+    /// Configure cells based on the section item.
     open var configureCell: ItemProvider? = nil
     
-    ///Returns Suplementary view for section
+    /// Returns Suplementary view for section
     open var configureSupplementaryElementOfKind: SupplementaryViewProvider? = nil
     
-    ///Configure item size based on the cell section item
+    /// Configure item size based on the cell section item
     open var configureCellSize: ItemSizeProvider? = nil {
         didSet {
             guard cellSize != nil else { return }
@@ -42,7 +42,7 @@ open class GRCollectionViewProvider<Section: Sectionable>: NSObject, UICollectio
         }
     }
     
-    ///Configure sections insets based on the cell section item.
+    /// Configure sections insets based on the cell section item.
     open var configureSectionInsets: SectionInsetProvider? = nil {
         didSet {
             guard sectionInsets != nil else { return }
@@ -50,7 +50,7 @@ open class GRCollectionViewProvider<Section: Sectionable>: NSObject, UICollectio
         }
     }
     
-    ///Configure min spacing for sections on the cell section item.
+    /// Configure min spacing for sections on the cell section item.
     open var configureMinLineSpacingForSection: MinLineSpacingProvider? = nil {
         didSet {
             guard minimumLineSpacingForSection != nil else { return }
@@ -58,7 +58,7 @@ open class GRCollectionViewProvider<Section: Sectionable>: NSObject, UICollectio
         }
     }
     
-    ///Configure min spacing for sections on the cell section item.
+    /// Configure min spacing for sections on the cell section item.
     open var configureMinInteritemSpacingForSection: MinLineSpacingProvider? = nil {
         didSet {
             guard minInteritemSpacingForSection != nil else { return }
@@ -66,9 +66,9 @@ open class GRCollectionViewProvider<Section: Sectionable>: NSObject, UICollectio
         }
     }
 
-    ///Configure sections insets based on the cell section item
+    /// Configure sections insets based on the cell section item
     open var configureDidScroll: ScrollProvider? = nil
-    ///Configure on item selection action based on the selected item
+    /// Configure on item selection action based on the selected item
     open var configureOnItemSelected: ItemSelectionProvider? = nil
         
     /// Closure calls when user scrolls in table view. It's closure of UIScrollViewDelegate method `scrollViewDidScroll`

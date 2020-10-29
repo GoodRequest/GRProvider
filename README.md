@@ -82,7 +82,7 @@ Firstly you need to model your data, showed in the `UITableView` or `UICollectio
 For example:
 
 ```swift
-///using Enum as Section & Class as Item
+/// using Enum as Section & Class as Item
 enum Section: Sectionable {
         
     case sectionOne([Item])
@@ -94,7 +94,7 @@ enum Section: Sectionable {
     
 }
 
-///using Class as a Section & Enum as an Item
+/// using Class as a Section & Enum as an Item
 class Section: Sectionable {
     let items: [Item]
     
@@ -106,7 +106,7 @@ class Section: Sectionable {
     
 }
 
-///Define only items without sections
+/// Define only items without sections
 enum Item {
     case title
     case divider
