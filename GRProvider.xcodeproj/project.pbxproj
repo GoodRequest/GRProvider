@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		AE56A5A0254B011A009F98CB /* DiffableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE56A59F254B011A009F98CB /* DiffableSection.swift */; };
+		AE9CC26C254AF375009CDAE9 /* GRDiffableCollectionViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CC26B254AF375009CDAE9 /* GRDiffableCollectionViewProvider.swift */; };
+		AE9CC275254AF4C9009CDAE9 /* DiffableCollectionProviderViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CC274254AF4C9009CDAE9 /* DiffableCollectionProviderViewSampleController.swift */; };
 		B18C775F2483F8D800B7E12F /* DeppDiffCollectionProviderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774D2483F8D700B7E12F /* DeppDiffCollectionProviderSampleViewController.swift */; };
 		B18C77602483F8D800B7E12F /* CollectionProviderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774E2483F8D700B7E12F /* CollectionProviderSampleViewController.swift */; };
 		B18C77612483F8D800B7E12F /* SimpleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C774F2483F8D700B7E12F /* SimpleCollectionViewCell.swift */; };
@@ -107,6 +110,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE56A59F254B011A009F98CB /* DiffableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableSection.swift; sourceTree = "<group>"; };
+		AE9CC26B254AF375009CDAE9 /* GRDiffableCollectionViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRDiffableCollectionViewProvider.swift; sourceTree = "<group>"; };
+		AE9CC274254AF4C9009CDAE9 /* DiffableCollectionProviderViewSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableCollectionProviderViewSampleController.swift; sourceTree = "<group>"; };
 		B18C770C2483F80400B7E12F /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C774D2483F8D700B7E12F /* DeppDiffCollectionProviderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeppDiffCollectionProviderSampleViewController.swift; sourceTree = "<group>"; };
 		B18C774E2483F8D700B7E12F /* CollectionProviderSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionProviderSampleViewController.swift; sourceTree = "<group>"; };
@@ -127,9 +133,9 @@
 		B18C77742483F94B00B7E12F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B18C777F2483FCCB00B7E12F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		"DeepDiff::DeepDiff::Product" /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeepDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"DeepDiff::DeepDiff::Product" /* DeepDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DeepDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"GRProvider::GRProvider::Product" /* GRProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"GRProvider::GRProviderTests::Product" /* GRProviderTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = GRProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"GRProvider::GRProviderTests::Product" /* GRProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = GRProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
 		OBJ_11 /* GRCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRCollectionViewProvider.swift; sourceTree = "<group>"; };
 		OBJ_12 /* GRDeepDiffCollectionViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDeepDiffCollectionViewProvider.swift; sourceTree = "<group>"; };
@@ -161,7 +167,6 @@
 		OBJ_48 /* IndexPathConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPathConverter.swift; sourceTree = "<group>"; };
 		OBJ_49 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_50 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_55 /* GRProvider.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = GRProvider.xcworkspace; sourceTree = SOURCE_ROOT; };
 		OBJ_56 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
 		OBJ_59 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -249,6 +254,7 @@
 				B18C774E2483F8D700B7E12F /* CollectionProviderSampleViewController.swift */,
 				B18C774F2483F8D700B7E12F /* SimpleCollectionViewCell.swift */,
 				B18C77502483F8D700B7E12F /* SimpleCollectionViewSupplementaryView.swift */,
+				AE9CC274254AF4C9009CDAE9 /* DiffableCollectionProviderViewSampleController.swift */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				B18C77592483F8D700B7E12F /* UITableViewExtensions.swift */,
 				B18C775A2483F8D700B7E12F /* UICollectionViewExtensions.swift */,
 				B18C775B2483F8D700B7E12F /* UIKitExtensions.swift */,
+				AE56A59F254B011A009F98CB /* DiffableSection.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -388,7 +395,6 @@
 				OBJ_35 /* Dependencies */,
 				B18C770D2483F80400B7E12F /* Sample */,
 				OBJ_51 /* Products */,
-				OBJ_55 /* GRProvider.xcworkspace */,
 				OBJ_56 /* Resources */,
 			);
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 				OBJ_12 /* GRDeepDiffCollectionViewProvider.swift */,
 				OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */,
 				OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */,
+				AE9CC26B254AF375009CDAE9 /* GRDiffableCollectionViewProvider.swift */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -600,6 +607,7 @@
 			files = (
 				B18C77672483F8D800B7E12F /* TableViewSampleController.swift in Sources */,
 				B18C77662483F8D800B7E12F /* DiffableTableViewSampleController.swift in Sources */,
+				AE56A5A0254B011A009F98CB /* DiffableSection.swift in Sources */,
 				B18C77692483F8D800B7E12F /* UITableViewExtensions.swift in Sources */,
 				B18C77612483F8D800B7E12F /* SimpleCollectionViewCell.swift in Sources */,
 				B18C777E2483FC2A00B7E12F /* SceneDelegate.swift in Sources */,
@@ -610,6 +618,7 @@
 				B18C776B2483F8D800B7E12F /* UIKitExtensions.swift in Sources */,
 				B18C77642483F8D800B7E12F /* SimpleTableViewCell.swift in Sources */,
 				B18C77652483F8D800B7E12F /* SimpleTableViewSampleController.swift in Sources */,
+				AE9CC275254AF4C9009CDAE9 /* DiffableCollectionProviderViewSampleController.swift in Sources */,
 				B18C77602483F8D800B7E12F /* CollectionProviderSampleViewController.swift in Sources */,
 				B18C77622483F8D800B7E12F /* SimpleCollectionViewSupplementaryView.swift in Sources */,
 			);
@@ -664,6 +673,7 @@
 				OBJ_91 /* GRCollectionViewProvider.swift in Sources */,
 				OBJ_92 /* GRDeepDiffCollectionViewProvider.swift in Sources */,
 				OBJ_93 /* DeepDiffCollectionViewBindingExtension.swift in Sources */,
+				AE9CC26C254AF375009CDAE9 /* GRDiffableCollectionViewProvider.swift in Sources */,
 				OBJ_94 /* DeepDiffCollectionViewUpdateExtensions.swift in Sources */,
 				OBJ_95 /* DeepDiffHelper.swift in Sources */,
 				OBJ_96 /* Displayable.swift in Sources */,
@@ -871,7 +881,6 @@
 				INFOPLIST_FILE = GRProvider.xcodeproj/GRProviderTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -896,7 +905,6 @@
 				INFOPLIST_FILE = GRProvider.xcodeproj/GRProviderTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -923,7 +931,7 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -948,7 +956,7 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -971,7 +979,6 @@
 				INFOPLIST_FILE = GRProvider.xcodeproj/DeepDiff_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -999,7 +1006,6 @@
 				INFOPLIST_FILE = GRProvider.xcodeproj/DeepDiff_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1045,7 +1051,6 @@
 				INFOPLIST_FILE = GRProvider.xcodeproj/GRProvider_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.0.1;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1074,7 +1079,6 @@
 				INFOPLIST_FILE = GRProvider.xcodeproj/GRProvider_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.0.1;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";

@@ -89,11 +89,11 @@ final class DeepDiffCollectionProviderViewSampleController: UIViewController {
         super.viewDidLoad()
         title = "DeepDiff Collection View Provider"
         
-        setupTableView()
+        setupCollectionView()
         setupStepper()
     }
     
-    private func setupTableView() {
+    private func setupCollectionView() {
         collectionProvider.configureCellSize = { _, cv, index, item in
             return CGSize(width: (cv.frame.width - 21) / 3, height: (cv.frame.width - 21) / 3)
         }
