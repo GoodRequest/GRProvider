@@ -3,6 +3,7 @@
 //  GRProvider
 //
 //  Created by Dominik Pethö on 5/27/20.
+//  Copyright © 2020 GoodRequest. All rights reserved.
 //
 
 import Foundation

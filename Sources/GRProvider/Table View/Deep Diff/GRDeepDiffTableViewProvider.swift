@@ -3,6 +3,7 @@
 //  GRProvider
 //
 //  Created by Dominik Pethö on 5/31/20.
+//  Copyright © 2020 GoodRequest. All rights reserved.
 //
 
 import Foundation
@@ -20,7 +21,7 @@ final public class GRDeepDiffTableViewProvider<Section: Sectionable & DiffAware>
              onComplete: onComplete)
     }
     
-    ///Binds items to collection view with using DeepDiff framework. Animates cells and sections using `performBatchUpdate` method
+    /// Binds items to collection view with using DeepDiff framework. Animates cells and sections using `performBatchUpdate` method
     
     public func bind(to tableView: UITableView,
                      sections: [Section],

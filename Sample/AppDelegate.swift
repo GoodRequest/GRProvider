@@ -3,6 +3,7 @@
 //  Sample
 //
 //  Created by Dominik Pethö on 5/31/20.
+//  Copyright © 2020 GoodRequest. All rights reserved.
 //
 
 import UIKit
