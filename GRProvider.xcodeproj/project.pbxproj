@@ -38,7 +38,6 @@
 		B18C777A2483FBD800B7E12F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C775C2483F8D700B7E12F /* Main.storyboard */; };
 		B18C777B2483FBDB00B7E12F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C775D2483F8D700B7E12F /* LaunchScreen.storyboard */; };
 		B18C777C2483FBDE00B7E12F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18C77742483F94B00B7E12F /* Assets.xcassets */; };
-		B18C777E2483FC2A00B7E12F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */; };
 		OBJ_100 /* GRTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* GRTableViewProvider.swift */; };
 		OBJ_101 /* GRDeepDiffTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* GRDeepDiffTableViewProvider.swift */; };
 		OBJ_102 /* DeepDiffUpdateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DeepDiffUpdateExtensions.swift */; };
@@ -125,7 +124,6 @@
 		B18C776E2483F8FD00B7E12F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18C776F2483F8FD00B7E12F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18C77742483F94B00B7E12F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B18C777F2483FCCB00B7E12F /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		"DeepDiff::DeepDiff::Product" /* DeepDiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DeepDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"GRProvider::GRProvider::Product" /* GRProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +159,6 @@
 		OBJ_48 /* IndexPathConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexPathConverter.swift; sourceTree = "<group>"; };
 		OBJ_49 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_50 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_55 /* GRProvider.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = GRProvider.xcworkspace; sourceTree = SOURCE_ROOT; };
 		OBJ_56 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
 		OBJ_59 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -227,7 +224,6 @@
 				B18C775C2483F8D700B7E12F /* Main.storyboard */,
 				B18C77742483F94B00B7E12F /* Assets.xcassets */,
 				B18C776E2483F8FD00B7E12F /* AppDelegate.swift */,
-				B18C777D2483FC2A00B7E12F /* SceneDelegate.swift */,
 				B18C776F2483F8FD00B7E12F /* Info.plist */,
 			);
 			path = Sample;
@@ -388,7 +384,6 @@
 				OBJ_35 /* Dependencies */,
 				B18C770D2483F80400B7E12F /* Sample */,
 				OBJ_51 /* Products */,
-				OBJ_55 /* GRProvider.xcworkspace */,
 				OBJ_56 /* Resources */,
 			);
 			sourceTree = "<group>";
@@ -602,7 +597,6 @@
 				B18C77662483F8D800B7E12F /* DiffableTableViewSampleController.swift in Sources */,
 				B18C77692483F8D800B7E12F /* UITableViewExtensions.swift in Sources */,
 				B18C77612483F8D800B7E12F /* SimpleCollectionViewCell.swift in Sources */,
-				B18C777E2483FC2A00B7E12F /* SceneDelegate.swift in Sources */,
 				B18C77702483F8FD00B7E12F /* AppDelegate.swift in Sources */,
 				B18C776A2483F8D800B7E12F /* UICollectionViewExtensions.swift in Sources */,
 				B18C775F2483F8D800B7E12F /* DeppDiffCollectionProviderSampleViewController.swift in Sources */,
