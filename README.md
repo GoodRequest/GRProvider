@@ -75,6 +75,8 @@ You can use this type of GRProviders:
 3. `GRDiffableTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `UITableViewDiffableDataSource` API for diffing and animating
 4. `GRDeepDiffTableViewProvider` -> Inherits all functionality of `GRTableViewProvider` but uses `DeepDiff` framework for diffing and animating. More info about framework [click here](https://github.com/onmyway133/DeepDiff).
 5. `GRCollectionViewProvider` -> Default provider for the CollectionView
+6. `GRDeepDiffCollectionViewProvider` -> Inherits all functionality of `GRCollectionViewProvider` but uses `DeepDiff` framework for diffing and animating. More info about framework [click here](https://github.com/onmyway133/DeepDiff).
+7. `GRDiffableCollectionViewProvider` -> CollectionView provider that uses `UICollectionViewDiffableDataSource` as a data source and leaves the layout handling for `collectionViewLayout`. It is recommended to use this provider alongside `UICollectionViewCompositionalLayout` or any custom layout.
 
 #### Define model 
 Firstly you need to model your data, showed in the `UITableView` or `UICollectionView` using any type you choose.
@@ -309,10 +311,11 @@ Closure is fired, when the table view contains the refresh control. When `scroll
 
 ### UICollectionView Providers
 
-Right know, we have only one 2 types of CollectionView Providers
+You can choose one of these types of providers:
 
 1. `GRCollectionViewProvider` -> Default provider for the `UICollectionView`
 2. `GRDeepDiffCollectionViewProvider` -> Inherits all functionality of the `GRCollectionViewProvider` but uses the `DeepDiff` framework for diffing and animating. More info about the framework, [click here](https://github.com/onmyway133/DeepDiff)
+3. `GRDiffableCollectionViewProvider` -> CollectionView provider that uses `UICollectionViewDiffableDataSource` as a data source and leaves the layout handling for `collectionViewLayout`. It is recommended to use this provider alongside `UICollectionViewCompositionalLayout` or any custom layout. Therefore some of the features as `cellSize`, `sectionInsets` and others are not available in this provider, selected `collectionViewLayout` should handle all the layout itself.
 
 **Features:**
 
@@ -328,7 +331,7 @@ Right know, we have only one 2 types of CollectionView Providers
 10. `configureWillEndDragging: WillEndDraggingProvider` & `configureDidEndDragging: DidEndDraggingProvider`
 11. `cellSize: CGSize`
 12. `sectionInsets: UIEdgeInsets`
-13. `minimumLineSpacingForSection: CGFloat` 
+13. `minimumLineSpacingForSection: CGFloat`
 14. `minInteritemSpacingForSection: CGFloat`
 
 

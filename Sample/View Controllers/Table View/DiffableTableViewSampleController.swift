@@ -9,10 +9,6 @@
 import UIKit
 import GRProvider
 
-fileprivate struct StepConfigurator {
-    let sections: [Section]
-}
-
 final class DiffableItemsGeneratorSlider: UISlider {
     
     override func awakeFromNib() {
@@ -21,11 +17,11 @@ final class DiffableItemsGeneratorSlider: UISlider {
         addTarget(self, action: #selector(sliderValueChanged(sender:)), for: .valueChanged)
     }
     
-    fileprivate var steps: [StepConfigurator] = []
+    var steps: [DiffableStepConfigurator] = []
     
-    fileprivate var onStepChanged: ((Int, StepConfigurator) -> ())?
+    var onStepChanged: ((Int, DiffableStepConfigurator) -> ())?
     
-    fileprivate func configure(steps: [StepConfigurator]) {        
+    func configure(steps: [DiffableStepConfigurator]) {
         self.maximumValue = Float(steps.count)
         self.steps = steps
     }
@@ -40,43 +36,15 @@ final class DiffableItemsGeneratorSlider: UISlider {
     
 }
 
-fileprivate struct Section: Sectionable, Hashable {
-    
-    struct Item: Hashable {
-       
-        let title: String
-        
-        init(title: String) {
-            self.title = title
-        }
-               
-    }
-    
-    var items: [Item]
-    var title: String?
-           
-    init(items: [Item], title: String?) {
-        self.items = items
-        self.title = title
-    }
-    
-    static func ==(lhs: Section, rhs: Section) -> Bool {
-        lhs.title == rhs.title
-    }
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(title)
-    }
-    
-}
-
 final class DiffableTableViewSampleController: UIViewController {
 
+    private typealias Section = DiffableSection
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var slider: DiffableItemsGeneratorSlider!
     @IBOutlet weak var stepLabel: UILabel!
     
-    fileprivate lazy var tableProvider = GRDiffableTableViewProvider<Section>(tableView: tableView)
+    fileprivate lazy var tableProvider = GRDiffableTableViewProvider<DiffableSection>(tableView: tableView)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -136,8 +104,8 @@ final class DiffableTableViewSampleController: UIViewController {
         }
     }
     
-    private func generateSteps() -> [StepConfigurator] {
-        var steps: [StepConfigurator] = []
+    private func generateSteps() -> [DiffableStepConfigurator] {
+        var steps: [DiffableStepConfigurator] = []
     
         let section1Step1 = Section(items: (1...5).map { Section.Item(title: "Item \($0)") }, title: "Section 1")
         let section3Step1 = Section(items: (10...12).map { Section.Item(title: "Item \($0)") }, title: "Section 2")
