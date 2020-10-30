@@ -15,7 +15,6 @@ open class GRDiffableTableViewProvider<Section: Sectionable>: TableViewProvider<
     
     public init(tableView: UITableView) {
         super.init()
-        self.configureCell = configureCell
         self.diffableTableViewProvider = .init(tableView: tableView, cellProvider: { [unowned self] tv, indexPath, item in
             self.configureCell?(self, tv, indexPath, item) ?? UITableViewCell()
         })        

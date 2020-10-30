@@ -17,7 +17,7 @@ final class DiffableCollectionProviderViewSampleController: UIViewController {
     @IBOutlet weak var slider: DiffableItemsGeneratorSlider!
     @IBOutlet weak var stepLabel: UILabel!
     
-    fileprivate lazy var provider = GRDiffableCollectionViewProvider<DiffableSection>()
+    fileprivate lazy var provider = GRDiffableCollectionViewProvider<DiffableSection>(collectionView: collectionView)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,6 @@ final class DiffableCollectionProviderViewSampleController: UIViewController {
             alert.addAction(.init(title: "Cancel", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }
-        provider.bindCollectionView(collectionView)
     }
     
     func createLayout() -> UICollectionViewLayout {
@@ -124,13 +123,13 @@ final class DiffableCollectionProviderViewSampleController: UIViewController {
             guard let `self` = self else { return }
             
             UIView.animate(withDuration: 0.6) {
-                self.provider.apply(configurator.sections)
+                self.provider.bind(to: self.collectionView, sections: configurator.sections)
             }
             self.stepLabel.text = "Step \(step)/\(steps.count)"
         }
 
         DispatchQueue.main.async { [unowned self] in
-            self.provider.apply(steps[0].sections)
+            self.provider.bind(to: collectionView, sections: steps[0].sections)
             self.stepLabel.text = "Step 1/\(steps.count)"
         }
     }

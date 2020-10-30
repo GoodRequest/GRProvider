@@ -23,6 +23,18 @@ open class GRDiffableCollectionViewProvider<Section: Sectionable>: NSObject, UIC
     public typealias DidEndDraggingProvider = (UIScrollView, Bool) -> ()
     public typealias WillEndDraggingProvider = (UIScrollView, CGPoint, UnsafeMutablePointer<CGPoint>) -> ()
     
+    public init(collectionView: UICollectionView) {
+        super.init()
+        
+        dataSource = DataSource(collectionView: collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell? in
+            return self.configureCell?(self, collectionView, indexPath, item)
+        }
+        
+        dataSource?.supplementaryViewProvider = { (collectionView, string, indexPath) -> UICollectionReusableView? in
+            return self.configureSupplementaryElementOfKind?(self, collectionView, indexPath, string)
+        }
+    }
+    
     ///Data source
     private(set) var dataSource: DataSource?
     
@@ -54,16 +66,6 @@ open class GRDiffableCollectionViewProvider<Section: Sectionable>: NSObject, UIC
     
     public var count: Int {
         return sections.map { $0.items.count }.reduce(0, +)
-    }
-    
-    open func bindCollectionView(_ collectionView: UICollectionView) {
-        dataSource = DataSource(collectionView: collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell? in
-            return self.configureCell?(self, collectionView, indexPath, item)
-        }
-        dataSource?.supplementaryViewProvider = { (collectionView, string, indexPath) -> UICollectionReusableView? in
-            return self.configureSupplementaryElementOfKind?(self, collectionView, indexPath, string)
-        }
-        collectionView.delegate = self
     }
         
     open func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -104,8 +106,13 @@ open class GRDiffableCollectionViewProvider<Section: Sectionable>: NSObject, UIC
     // MARK: - Binding
     
     /// Binds items to collection view with default reload animation
-    public func apply(_ sections: [Section], animated: Bool = true, onComplete: @escaping () -> () = {}) {
+    public func bind(to collectionView: UICollectionView,
+                     sections: [Section],
+                     animated: Bool = true,
+                     onComplete: @escaping () -> () = {}) {
         var snapshot = Snapshot()
+                
+        collectionView.delegate = self
         
         snapshot.appendSections(sections)
         for section in sections {
