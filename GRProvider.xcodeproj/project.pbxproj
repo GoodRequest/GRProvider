@@ -223,6 +223,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE56A5E7254BFCDE009F98CB /* Deep Diff */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* GRDeepDiffCollectionViewProvider.swift */,
+				OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */,
+				OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */,
+			);
+			path = "Deep Diff";
+			sourceTree = "<group>";
+		};
+		AE56A5E8254BFCF9009F98CB /* Diffable */ = {
+			isa = PBXGroup;
+			children = (
+				AE9CC26B254AF375009CDAE9 /* GRDiffableCollectionViewProvider.swift */,
+			);
+			path = Diffable;
+			sourceTree = "<group>";
+		};
 		B18C770D2483F80400B7E12F /* Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,10 +303,10 @@
 		OBJ_19 /* Table View */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* GRSimpleTableViewProvider.swift */,
-				OBJ_21 /* GRTableViewProvider.swift */,
 				OBJ_22 /* Deep Diff */,
 				OBJ_26 /* Diffable */,
+				OBJ_20 /* GRSimpleTableViewProvider.swift */,
+				OBJ_21 /* GRTableViewProvider.swift */,
 				OBJ_29 /* TableViewExtensions.swift */,
 				OBJ_30 /* TableViewProvider.swift */,
 			);
@@ -434,12 +452,10 @@
 		OBJ_9 /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
+				AE56A5E7254BFCDE009F98CB /* Deep Diff */,
+				AE56A5E8254BFCF9009F98CB /* Diffable */,
 				OBJ_10 /* CollectionViewExtensions.swift */,
 				OBJ_11 /* GRCollectionViewProvider.swift */,
-				OBJ_12 /* GRDeepDiffCollectionViewProvider.swift */,
-				OBJ_13 /* DeepDiffCollectionViewBindingExtension.swift */,
-				OBJ_14 /* DeepDiffCollectionViewUpdateExtensions.swift */,
-				AE9CC26B254AF375009CDAE9 /* GRDiffableCollectionViewProvider.swift */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
