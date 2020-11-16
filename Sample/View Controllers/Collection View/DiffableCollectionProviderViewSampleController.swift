@@ -55,7 +55,7 @@ final class DiffableCollectionProviderViewSampleController: UIViewController {
         configuration.scrollDirection = .vertical
         configuration.interSectionSpacing = 10
         
-        let layout = UICollectionViewCompositionalLayout(sectionProvider: { (index, environment) -> NSCollectionLayoutSection? in
+        let layout = UICollectionViewCompositionalLayout(sectionProvider: { [unowned self] (index, environment) -> NSCollectionLayoutSection? in
             switch index % 3 {
             case 0:
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),

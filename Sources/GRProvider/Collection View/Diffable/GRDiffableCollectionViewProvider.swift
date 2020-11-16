@@ -26,11 +26,11 @@ open class GRDiffableCollectionViewProvider<Section: Sectionable>: NSObject, UIC
     public init(collectionView: UICollectionView) {
         super.init()
         
-        dataSource = DataSource(collectionView: collectionView) { (collectionView, indexPath, item) -> UICollectionViewCell? in
+        dataSource = DataSource(collectionView: collectionView) { [unowned self] (collectionView, indexPath, item) -> UICollectionViewCell? in
             return self.configureCell?(self, collectionView, indexPath, item)
         }
         
-        dataSource?.supplementaryViewProvider = { (collectionView, string, indexPath) -> UICollectionReusableView? in
+        dataSource?.supplementaryViewProvider = { [unowned self] (collectionView, string, indexPath) -> UICollectionReusableView? in
             return self.configureSupplementaryElementOfKind?(self, collectionView, indexPath, string)
         }
     }

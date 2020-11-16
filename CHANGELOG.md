@@ -1,3 +1,8 @@
+## [0.0.6] 16.11.2020
+### Fix
+- Memory leaks inside the  Diffable CollectionView provider
+
+
 ## [0.0.5] 30.10.2020
 ### Added
 - Diffable CollectionView provider
