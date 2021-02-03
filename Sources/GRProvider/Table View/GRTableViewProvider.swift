@@ -83,6 +83,10 @@ open class GRTableViewProvider<Section: Sectionable>: TableViewProvider<Section>
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         configureDidScroll?(scrollView)
     }
+
+    open func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        configureWillBeginDragging?(scrollView)
+    }
     
     open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         configureDidEndDragging?(scrollView, decelerate)

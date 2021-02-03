@@ -82,6 +82,8 @@ open class TableViewProvider<Section: Sectionable>: NSObject {
     /// Closure calls when the table view contains refresh control. When `scrollViewDidEndDragging` executes, it autmatically checks the refresh control `isRefreshing` property and fires the event.
     open var configureRefreshGesture: ScrollProvider? = nil
     
+    /// Closure calls when `scrollViewWillBeginDragging` fires up.
+    open var configureWillBeginDragging: ScrollProvider? = nil
     /// Closure calls when `scrollViewDidEndDragging` fires up.
     open var configureDidEndDragging: DidEndDraggingProvider? = nil
     /// Closure calls when `scrollViewDidEndDragging` fires up.
