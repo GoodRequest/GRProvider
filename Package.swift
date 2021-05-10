@@ -12,8 +12,7 @@ let package = Package(
             targets: ["GRProvider"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/onmyway133/DeepDiff.git", .upToNextMajor(from: "2.3.0"))
-
+        .package(url: "https://github.com/onmyway133/DeepDiff.git", .exact("2.3.0"))
     ],
     targets: [
         .target(
