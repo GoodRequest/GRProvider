@@ -1,7 +1,6 @@
 ## [0.0.9] 14.6.2021
-### Added `configureShouldDeselectItem` and `configureShouldSelectItem` for the `GRCollectionVIewProvider` to make a proxy around datasource methods
-
-- Package could not be compiled, bacuse of the wrong configuration of the `DeepDiff` submodule
+### Added 
+- `configureShouldDeselectItem` and `configureShouldSelectItem` for the `GRCollectionVIewProvider` to make a proxy around datasource methods
 
 ## [0.0.8] 10.5.2021
 ### Fix
