@@ -19,7 +19,7 @@ open class GRCollectionViewProvider<Section: Sectionable>:
     public typealias SectionInsetProvider = (GRCollectionViewProvider, UICollectionView, Section) -> UIEdgeInsets
     public typealias ItemSelectionProvider = (GRCollectionViewProvider, UICollectionView, IndexPath, Section.Item) -> ()
     public typealias MinLineSpacingProvider = (GRCollectionViewProvider, UICollectionView, Section) -> CGFloat
-    public typealias ItemSelectionStateApprovalProvider = (GRDiffableCollectionViewProvider<Section>, UICollectionView, IndexPath, Section) -> (Bool)
+    public typealias ItemSelectionStateApprovalProvider = (GRCollectionViewProvider, UICollectionView, IndexPath, Section) -> (Bool)
 
     public typealias ScrollProvider = (UIScrollView) -> ()
     public typealias DidEndDraggingProvider = (UIScrollView, Bool) -> ()
@@ -236,8 +236,7 @@ open class GRCollectionViewProvider<Section: Sectionable>:
     }
 
     open func collectionView(
-        _ collectionView: UICollectionView, l
-            ayout collectionViewLayout: UICollectionViewLayout,
+        _ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
         minimumInteritemSpacingForSectionAt section: Int
     ) -> CGFloat {
         return configureMinInteritemSpacingForSection?(

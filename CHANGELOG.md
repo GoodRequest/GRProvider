@@ -1,3 +1,7 @@
+## [0.1.0] 14.6.2021
+### fix 
+- compilation error
+
 ## [0.0.9] 14.6.2021
 ### Added 
 - `configureShouldDeselectItem` and `configureShouldSelectItem` for the `GRCollectionVIewProvider` to make a proxy around datasource methods
