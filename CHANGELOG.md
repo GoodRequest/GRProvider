@@ -1,3 +1,16 @@
+## [0.0.9] 14.6.2021
+### Added `configureShouldDeselectItem` and `configureShouldSelectItem` for the `GRCollectionVIewProvider` to make a proxy around datasource methods
+
+- Package could not be compiled, bacuse of the wrong configuration of the `DeepDiff` submodule
+
+## [0.0.8] 10.5.2021
+### Fix
+- Package could not be compiled, bacuse of the wrong configuration of the `DeepDiff` submodule
+
+## [0.0.7] 3.2.2021
+### Added
+- `willBeginDragging` configuration property for `GRTableViewProvider`
+
 ## [0.0.6] 16.11.2020
 ### Fix
 - Memory leaks inside the  Diffable CollectionView provider
