@@ -270,11 +270,11 @@ final class DiffableTableViewProvider<Section: Sectionable>: UITableViewDiffable
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return heightForHeaderInSection ?? 0
+        (heightForHeaderInSection ?? configureSectionHeaderHeight?(section)) ?? 0
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-        return heightForFooterInSection ?? 0
+        (heightForFooterInSection ?? configureSectionFooterHeight?(section)) ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
