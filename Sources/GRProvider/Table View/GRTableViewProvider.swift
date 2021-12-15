@@ -46,11 +46,11 @@ open class GRTableViewProvider<Section: Sectionable>: TableViewProvider<Section>
     }
     
     open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-        return estimatedHeightForRow ?? 0
+        (heightForHeaderInSection ?? configureSectionHeaderHeight?(self, tableView, section, sections[section])) ?? 0
     }
     
     open func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
-        return estimatedHeightForRow ?? 0
+        (heightForFooterInSection ?? configureSectionFooterHeight?(self, tableView, section, sections[section])) ?? 0
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
