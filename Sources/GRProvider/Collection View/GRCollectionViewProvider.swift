@@ -289,4 +289,11 @@ open class GRCollectionViewProvider<Section: Sectionable>:
         }
     }
 
+    public func bindSilently(to collectionView: UICollectionView, sections: [Section]) {
+        self.collectionView = collectionView
+        self.sections = sections
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+    }
+
 }
