@@ -36,6 +36,7 @@ final class DiffableItemsGeneratorSlider: UISlider {
     
 }
 
+@available(iOS 13.0, *)
 final class DiffableTableViewSampleController: UIViewController {
 
     private typealias Section = DiffableSection
