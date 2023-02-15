@@ -9,6 +9,7 @@
 import UIKit
 import GRProvider
 
+@available(iOS 13.0, *)
 final class DiffableCollectionProviderViewSampleController: UIViewController {
     
     private typealias Section = DiffableSection

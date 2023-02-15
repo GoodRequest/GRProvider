@@ -17,7 +17,9 @@ let package = Package(
     targets: [
         .target(
             name: "GRProvider",
-            dependencies: ["DeepDiff"],
+            dependencies: [
+                .product(name: "DeepDiff", package: "DeepDiff")
+            ],
             path: "Sources"),
         .target(
         name: "GRProviderSample",
